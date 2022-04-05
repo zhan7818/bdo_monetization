@@ -1,12 +1,10 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "(TEMP) Online Video Game Monetization Schemes and Its Relationship to the Consumers"
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
+  - Tian Yi Zhang
+thanks: "Code and data are available at: https://github.com/zhan7818/bdo_monetization"
 date: "`r format(Sys.time(), '%d %B %Y')`"
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "Advertisement and monetization schemes are essential to obtaining a stable revenue stream and ensuring the continued surival of an online video game. We obtain data through a survey distributed in several online communities for the massively multiplayer online game known as Black Desert Online and analyze it throuhg several graphs, tables, and a model in this paper. (TODO) Sentence about findings. (TODO) Sentence about implications. (TODO) Keywords:"
 output:
   bookdown::pdf_document2
 toc: FALSE
@@ -17,77 +15,83 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
-library(palmerpenguins)
 ```
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. For instance, Section \@ref(data). R Markdown automatically makes the sections lower case and adds a dash to spaces to generate labels, for instance, Section \@ref(first-discussion-point). 
+Just a decade or two ago, singleplayer-driven content was the predominant
+focus in the video game industry. This was mostly a product of the time, as the
+infrastructures needed to support online-based video games were yet to be
+fully developed. More importantly, what this also meant was a lack of 
+post-launch updates being delivered for a game, as developers also lacked means
+to deliver constant updates effectively into the hands of the consumers. As a
+result, most video games received little to no post-launch updates aside from
+one or two major expansions to their games that contained sufficient content
+to be put on the shelves as add-ons to the original purchase.
+Despite this, consumers back then were generally content with the amount of 
+content they received for their purchases.
+
+As the years went by and networking structures matured, however, more and more
+video game developers started focusing more on the online aspects of gaming.
+The number of multiplayer-focused video games in the market started to steadily
+increase. Now, in an era of live service online video games, developers are 
+pressured to continuously produce and deliver new and exciting content on a 
+consistent schedule in order to compete with other products. This need to
+create more content for a game means that development resources are constantly
+required, and online focused games can no longer afford to charge their
+consumers a simple upfront fee; live service video games must find an effective
+and profitable monetization scheme in order to fund their continued development.
+
+The most prominent examples of live service online video games are the massively
+multiplayer online role-playing games (MMORPG), a genre of video games known
+specifically for its focus on multiplayer. Due to their focus on 
+progression-based gameplay, developers of MMORPGs must constantly create new
+and refreshing content to add to their games. To subsidize the development
+costs that go along with it, developers have created a variety of monetization
+models to ensure a steady revenue stream. For example, World of Warcraft, one
+of the biggest MMORPGs, relies primarily on a monthly subscription from its
+players. Others, such as Lost Ark, adopt a mix of strategies with 
+a monthly subscription that grants
+massive boosts in-game and an in-game cash shop that allows players to
+purchases items for a variety of purposes using real world currencies.
+If done properly, an analysis
+on the monetization schemes of MMORPGs could have meaningful
+implications for future MMORPG developers on how they should monetize their
+video games to maximize revenue.
+
+This paper primarily focuses on the MMORPG known as Black Desert Online,
+as it is MMORPG that utilizes a of mix of upfront cost, subscription and in-game
+cash shop. Pearl Abyss, the developers behind Black Desert Online, 
+never published any official statistics that touch upon the revenue of
+Black Desert Online. As such, the following analysis will rely on data 
+collected by the author of this paper.
+
+The remainder of this paper is organized as follows: Section \@ref(data) covers
+the survey design, sampling and preliminary analyses of the dataset used in this
+paper. Section \@ref(model) details the model used to find possible correlations
+between variables in the dataset, the results and implications of which will 
+be covered in Section \@ref(results). Any limitations or possible extensions 
+of this paper will be discussed in Section \@ref(discussion).
 
 
+TODO: add in some references that support claims about general transition from 
+singleplayer to multiplayer in video game industry.
 
 # Data
 
-Our data is of penguins (Figure \@ref(fig:bills)).
-
-```{r bills, fig.cap="Bills of penguins", echo = FALSE}
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = FALSE) +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
-
-Talk more about it.
-
-Also bills and their average (Figure \@ref(fig:billssssss)). (Notice how you can change the height and width so they don't take the whole page?)
-
-```{r billssssss, fig.cap="More bills of penguins", echo = FALSE, fig.width=8, fig.height=4}
-
-# This needs to be about the random data tha tI sasmpled?
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = FALSE) +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
-
-Talk way more about it. 
-
-
+TODO
 
 # Model
 
-\begin{equation}
-Pr(\theta | y) = \frac{Pr(y | \theta) Pr(\theta)}{Pr(y)}  (\#eq:bayes)
-\end{equation}
-
-Equation \@ref(eq:bayes) seems useful, eh?
-
-Here's a dumb example of how to use some references: In paper we run our analysis in `R` [@citeR]. We also use the `tidyverse` which was written by @thereferencecanbewhatever If we were interested in baseball data then @citeLahman could be useful. 
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
+TODO
 
 # Results
 
+TODO
+
 # Discussion
 
-## First discussion point
-
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
-
-## Second discussion point
-
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
+TODO
 
 \newpage
 
@@ -95,12 +99,7 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
-
-# Additional details
-
-
 \newpage
-
 
 # References
 
