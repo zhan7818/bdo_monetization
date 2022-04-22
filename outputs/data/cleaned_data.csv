@@ -43,14 +43,12 @@ age,gender,character_total,character_female,playtime_total,playtime_main,gender_
 22,Male,9,7,3000,1000,Female,Explorer Edition,40,0,10,9,3,0,50,0,30,100,150,400
 22,Male,3,1,330,199,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,8,7,3,4,30,30,2,30,30,30
 21,Male,2,2,26,20,Female,Traveler Edition,10,0,7,1,0,0,0,0,0,0,0,0
-69,Other,10+,10+,6969,420,Female,Got the game for free,0,1,10,10,69,69,6969,420,69,6969,6969,696969
 22,Male,5,3,278,122,Female,Explorer Edition,40,0,4,5,0,0,0,0,0,0,0,0
 21,Male,10+,10+,14000,10272,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,2,2,30,60,0,200,30,160,1200
 22,Other,5,3,300,200,Male,Traveler Edition,10,0,7,2,0,0,30,0,0,30,0,30
 46,Male,10+,10+,1000000,21510,Female,Got the game for free,0,1,3,1,14,0,0,0,22,0,0,0
 22,Male,8,4,2500,700,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,13,0,80,40,10,30,300,600
 33,Male,10+,10+,29104,12682,Male,"Explorer Edition, Conqueror Edition",130,0,10,8,10,5,900,400,15,4000,4000,8000
-1,Other,10+,10+,1,1,Female,Eternal Winter Edition,80,0,1,1,1,1,1,1,1,1,1,1
 27,Male,7,6,8765,1307,Female,Got the game for free,0,1,1,1,2,0,135,0,9,500,230,860
 56,Female,7,4,1500,300,Female,Got the game for free,0,1,1,1,4,0,60,0,0,40,0,100
 21,Male,1,1,99,99,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
@@ -90,13 +88,13 @@ age,gender,character_total,character_female,playtime_total,playtime_main,gender_
 57,Male,10+,10+,12000,6385,Female,Traveler Edition,10,0,3,7,3,0,100,0,2,60,140,500
 22,Male,10+,10+,12000,3520,Male,"Traveler Edition, Conqueror Edition",100,0,5,8,0,1,0,0,30,50,60,110
 19,Male,5,4,700,600,Female,Got the game for free,0,1,3,2,1,0,0,0,1,30,20,60
-32,Male,10+,10+,+20000,+10000,Male,Conqueror Edition,90,0,10,10,0,0,+1000,+1000,0,+300,+1000,+3500
+32,Male,10+,10+,20000,10000,Male,Conqueror Edition,90,0,10,10,0,0,1000,1000,0,300,1000,3500
 30,Male,8,8,1500,1100,Female,Got the game for free,0,1,8,3,0,0,0,0,12,0,0,0
 24,Male,10+,10+,33820,2040,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,8,1,3,500,200,30,200,500,5000
 41,Female,10+,7,9500,1000,Male,Traveler Edition,10,0,10,10,1,0,500,30,2,100,200,550
 24,Male,10+,10+,11000,7100,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,10,5,0,0,50,0,50,500,100,800
 23,Male,8,7,500,150,Female,Got the game for free,0,1,9,7,0,0,0,0,0,20,20,55
-23,Male,10+,8,+20000,5132,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,1,2,1,150,0,+10,50,100,300
+23,Male,10+,8,20000,5132,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,1,2,1,150,0,10,50,100,300
 19,Male,10+,10+,7000,6500,Female,Conqueror Edition,90,0,6,5,1,0,10,0,50,100,300,400
 32,Male,6,3,1100,600,Male,Got the game for free,0,1,5,8,0,15,40,60,5,3,600,900
 20,Male,1,1,4000,3900,Female,Got the game for free,0,1,3,3,0,0,0,0,0,0,0,0
@@ -129,7 +127,6 @@ age,gender,character_total,character_female,playtime_total,playtime_main,gender_
 33,Male,10+,10+,12000,500,Female,Explorer Edition,40,0,6,10,5,20,200,100,100,150,450,1000
 21,Male,10+,7,7000,3569,Female,Explorer Edition,40,0,2,1,1,0,20,0,12,40,60,120
 23,Male,10+,5,2453,643,Female,Explorer Edition,40,0,9,7,0,0,100,0,3,350,200,700
-00011010,Male,10+,10+,00100101100001010,00100001100010011,Female,"Traveler Edition, Explorer Edition",50,0,10,10,00000011,01000000,0,0,00000011,0,0,0
 20,Male,5,1,2305,2290,Male,"Explorer Edition, Eternal Winter Edition",120,0,10,6,0,0,60,0,0,0,200,260
 32,Male,10+,10+,9999,300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,10,10,0,0,1000,1000,0,2000,1000,5000
 29,Male,10+,3,1200,500,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,0,0,250,250,3,100,300,1500
