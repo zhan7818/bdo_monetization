@@ -60,6 +60,7 @@ implications for future MMORPG developers on how they should monetize their
 video games to maximize revenue.
 
 This paper primarily focuses on the MMORPG known as Black Desert Online,
+commonly and henceforth referred to as BDO.
 as it is MMORPG that utilizes a of mix of upfront cost, subscription and in-game
 cash shop. Pearl Abyss, the developers behind Black Desert Online, 
 never published any official statistics that touch upon the revenue of
@@ -79,7 +80,126 @@ singleplayer to multiplayer in video game industry.
 
 # Data
 
-TODO
+## Survey Design
+
+Due to the lack of APIs provided by Pearl Abyss that concerns the subject of
+this paper, convenience sampling is used to collect data from the general
+playerbase for the game. The survey is created in Google Forms and is
+distributed to Black Desert Online players on Steam discussion, Black Desert
+Online forum board, and the Black Desert Online subreddit on Reddit. The survey
+consists of questions mostly regarding the respondents' amount of spending in
+the various monetization models employed by Black Desert Online, as well as
+some general background information regarding each respondent and their in-game
+characters. The survey questions could be largely divided into the following set
+of topics:
+
+* Background characteristics such as age, gender and playtime
+* Upfront spending for the game such as the purchase of game packages
+* Spending for in-game subscription-esque items using either in-game or real
+world currencies
+* Opinion on in-game subscription-esque items
+* Spending for other general cash shop items in-game using either in-game or
+real world currencies
+
+In the post containing the survey on each of the distributed sites mentioned 
+above, efforts were made to be
+as transparent as possible with the participants: respondents were 
+informed of the intended usage for the data collected and were assured that
+no information that can be used to identify them will be collected nor
+included in the survey and final paper.
+
+## Dataset Cleaning and Description
+
+A total of 212 responses were collected from the survey. The data was exported
+to excel [@citeExcel] where the columns names were shortened to be readable.
+Two new columns were created from the responses:
+* packages_usd: amount in USD spent on purchasing game packages
+* packages_free: binary indicator of whether the respondent received the game
+for free
+
+The dataset is then cleaned using the statistical programming language R 
+[@citeR] and the `janitor` [@citejani] and `dplyr` 
+[@citedplyr] package. The `pointblank` [@citePB] package is used to set 
+up validation tests for the class and the content of the dataset. The final
+dataset consists of the following variables:
+
+* `age`: age of the respondent
+* `gender`: gender of the respondent; male, female or other
+* `character_total`: respondent's total number of characters in Black 
+Desert Online
+* `character_female`: respondent's total number of female characters in Black
+Desert Online, excluding the character classes Tamer and Shai
+* `playtime_total`: respondent's total playtime in Black Desert Online
+* `playtime_main`: respondent's playtime on their primary character in Black
+Desert Online
+* `gender_main`: gender of respondent's main character; male or female
+* `packages`: the game packages purchased by the respondent
+* `packages_usd`: the amount in USD spent purchasing game packages by the
+respondent
+* `package_free`: binary indicator of whether the respondent received the game
+for free
+* `importance_vp`: respondent's rating on the importance of Value Pack to their
+enjoyment of the game
+* `importance_bkom`: respondent's rating on the importance of Blessing of
+Kamasylve and Secret Book of Old Moon to their enjoyment of the game
+* cm_vp_count: number of Value Packs purchased on the central market by the
+respondent
+* `cm_bkom_count`: number of Blessing of Kamasylve and Secret Book of Old Moon
+purchased on the central market by the respondent
+* `ps_vp_usd`: amount in USD spent by the respondent
+purchasing Value Packs in the pearl shop
+* `ps_bkom_usd`: amount in USD spent by the respondent
+purchasing Blessings of Kamasylve and Secret Books of Old Moon in the pearl shop
+* `cm_outfits`: number of outfits purchased on the central market by the
+respondent
+* `ps_cosmetic_usd`: amount in USD spent by the respondent purchasing cosmetic
+items in the pearl shop
+* `ps_functional_usd`: amount in USD spent by the respondent purchasing functional
+items in the pearl shop
+
+Typically, players in Black Desert Online will consider one character as their
+primary character and spend considerably more time on that character than their 
+other characters. As such, playtime for the main character and total playtime
+were survyed separetely.
+
+There are two methods to purchase premium items in this game: through the
+`central market` or through the `pearl shop`. Pearl shop is BDO's cash shop,
+accessible to every player, where players could use `pearls`, a currency
+converted from real world currencies, to purchase premium items for cosmetic
+and functional purposes. Furthermore, players who purchased premium items in
+the pearl shop could list these items onto the central market for sale. Other
+players could then use `silver`, the primary in-game currency, to purchase
+the said premium items. This system serves as a way for some players to obtain
+more silver using real world currencies, and for other players to obtain
+premium items without ever spending any real world currencies to do so.
+
+There are 3 subscription-esque items in the game: `Value Pack`,
+`Blesing of Kamasylve`, and `Secret Book of Old Moon`, henceforth referred to
+as VP, BK, and OM. VP existed as an
+item since the launch of BDO, and BK and OM
+were introduced later on. Each of these 3 items offer
+unique bonuses and to players such as shortcuts and quality of life
+buffs to certain in-game systems to make them easier to use. Typically,
+VPs can be purchased for 30 days, 60 days, and 90 days, and BKs and OMs can
+be purchased for 15 days (exceptions occur in bundles and/or event sales 
+including the said items). Because of this, these 3 items are usually bought
+once or twice per month so that a player can consistently maintain the buffs
+they provide. As such, they could be reasonably considered as a
+pseudo-subscription model employed by BDO.
+
+Outside of the 3 subscription items, there are other premium items offered in
+the pearl shop, some of which are permanent while others are consumables. These
+items can be mostly categorized into two types: cosmetic (e.g., character
+outfits, home furnitures, dyes, etc) and functional (e.g., camping tent, energy
+potions, pets, etc). Most of the cosmetic items can be listed on the central
+market just like the subscription items, but functional items are generally
+only purchasable through the pearl shop.
+
+An important thing to note about this topic is the issue of supply and demand:
+Despite being able to list most cosmetic items onto the central market,
+there is generally always more demand for these cosmetic items than the supply.
+
+TODO: GRAPH SHOWING THE AMOUNT OF PPL WHO DIDNT GET OUTFITS FROM CM.
 
 # Model
 

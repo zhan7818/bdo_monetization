@@ -24,7 +24,7 @@ raw_data <- readr::read_csv("inputs/data/raw_data.csv")
 #### Data Cleaning ####
 # Remove malicious responses intended to sabotage the survey
 # Row 45, 52, and 131 are obvious malicious responses
-cleaned_data <- raw_data[-c(45,52,131),]
+cleaned_data <- clean_names(raw_data[-c(45,52,131),])
 
 #### Dataset Validation ####
 # Change the class of the variables so that they are considered factors when
