@@ -12,9 +12,15 @@ bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
+# Load required packages and read in the data
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
+library(knitr) # for kable()
+library(ggplot2) # for graphs
+
+cleaned_data <-
+  read_csv(here::here("outputs/data/cleaned_data.csv"))
 ```
 
 # Introduction
@@ -120,10 +126,13 @@ for free
 The dataset is then cleaned using the statistical programming language R 
 [@citeR] and the `janitor` [@citejani] and `dplyr` 
 [@citedplyr] package. The `pointblank` [@citePB] package is used to set 
-up validation tests for the class and the content of the dataset. The final
-dataset consists of the following variables:
+up validation tests for the class and the content of the dataset.
+A new variable, `age_group`, is constructed based on the ages of the 
+respondents.
+The final dataset consists of the following variables:
 
 * `age`: age of the respondent
+* `age_group`: age group of the respondent
 * `gender`: gender of the respondent; male, female or other
 * `character_total`: respondent's total number of characters in Black 
 Desert Online
@@ -175,7 +184,7 @@ premium items without ever spending any real world currencies to do so.
 
 There are 3 subscription-esque items in the game: `Value Pack`,
 `Blesing of Kamasylve`, and `Secret Book of Old Moon`, henceforth referred to
-as VP, BK, and OM. VP existed as an
+as `VP`, `BK`, and `OM`. VP existed as an
 item since the launch of BDO, and BK and OM
 were introduced later on. Each of these 3 items offer
 unique bonuses and to players such as shortcuts and quality of life
@@ -195,11 +204,109 @@ potions, pets, etc). Most of the cosmetic items can be listed on the central
 market just like the subscription items, but functional items are generally
 only purchasable through the pearl shop.
 
-An important thing to note about this topic is the issue of supply and demand:
+## Preliminary Analysis
+
+Table \@ref(tab:table1) showcases a summary of the average spending of the
+respondents, categorized into age groups and gender, in USD. Already, we observe
+that there is a noticeably higher average for spending in the pearl shop 
+compared to upfront package purchases.
+Note that this difference could be potentially misleading; The large majority
+of players do not spend much money in the pearl shop, and the exceedingly high
+average pearl shop spending is inflated by a select few players who have
+invested massive amounts of real world currency into the game. This issue is
+further elaborated upon in Section \@ref(discussion).
+
+```{r table1, echo=FALSE, warning=FALSE, message=FALSE}
+# Create summary dataset
+# Due to insufficient response counts,
+#   remove the "other" gender group for this summary table
+summary_tbl <- cleaned_data[-c(47,70,85,103,135),] |>
+  group_by(age_group, gender) |>
+  summarise(ps_mean = mean(ps_total),
+            packages_mean = mean(packages_usd),
+            playtime_mean = mean(playtime_total))
+
+# Use kable to create the table
+summary_tbl |>
+  kable(
+    caption = "Summary of Average Playtime and Spending in Upfront and Cash Shop
+      Categories in Black Desert Online",
+    col.names = c("Age Group",
+                  "Gender",
+                  "Avg PS Spending (USD)",
+                  "Avg Package Spending (USD)",
+                  "Avg Playtime (hrs)"),
+    digits = 1,
+    booktabs = TRUE,
+    linesep = ""
+  )
+
+```
+```{r}
+
+```
+
+Due to having a variety of ways for consumers to spend real world currencies in
+BDO, a considerable variation of money spent on the game is expected for
+respondents of the survey.
+This is demonstrated in Figure \@ref(tab:graph1), where we can see that the
+majority of respondents spend less than $1000 USD in the pearl shop, but there
+are also quite a few respondents that fall outside of that range by a
+substantial amount. 
+Note that it is unwise to simply categorize these responses as simple outliers
+and exclude them from the dataset, as we must consider the phenomenon of
+"whales". This idea is also further explored in Section \@ref(discussion).
+
+```{r graph1, fig.cap="Spending in Pearl Shop in USD",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# Create a histogram of spending in pearl shop
+cleaned_data |>
+  ggplot(aes(x = ps_total, fill = age_group)) +
+  geom_histogram(bins = 100) +
+  theme_minimal() +
+  labs(x = 'Total Spending in Pearl Shop in USD')
+```
+
+### Supply and Demand
+
+An important aspect of the central market in BDO is the issue of supply and demand:
 Despite being able to list most cosmetic items onto the central market,
 there is generally always more demand for these cosmetic items than the supply.
+To combat the issue of price inflation, most items that can be listed on the
+central market in BDO--including value packs--have a price ceiling as
+dictated by the developers of the game. When that price ceiling is reached
+(i.e., the highest pre-order price placed for the item is the maximum price point),
+any further listings of the item will instead `randomly` choose a player with a
+max-priced pre-order placed and sell the item to the said player.
 
-TODO: GRAPH SHOWING THE AMOUNT OF PPL WHO DIDNT GET OUTFITS FROM CM.
+Because of the mechanic described above, an item pre-ordered at its price ceiling
+does not follow a first-come first-serve basis and the central market instead relies
+on randomness to decide which player to sell the item to. This means for items
+with drastically higher demand than supply (such as a value pack), players
+are never guaranteed to obtain the item, regardless of how long they have
+placed the pre-order for the said item already. This often leads to cases
+where a player could place a pre-order for an item for an extensive period of 
+time (months or years) yet never successfully purchases the item from the
+central market.
+
+Figure \@ref(fig:graph1) showcases this issue: For respondents who claimed
+that having a VP active is crucial to their enjoyment of the game, only a few
+reported having consistent success purchasing VPs from the central market.
+
+```{r graph2, fig.cap="Rated Importance of Value Pack Versus Number of Value Packs Purchased on Central Market",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# Create a graph that showcases the importance of VP vs. number of VP bought
+#   from the central market
+# Row 6, 24 and 112 seem to be an outliers; no dicernable reason for someone to purchase
+#   enough VPs for more than number of days the game has been released for.
+#   Possible input error from the respondent. Regardless, removed for a more
+#   visually clear graph
+cleaned_data[-c(6,24,112),] |>
+  ggplot(aes(x = importance_vp, y = cm_vp_count)) +
+  geom_point(size = 1.75, alpha = 0.1, color="red") +
+  theme_minimal() +
+  labs(x = "Importance of Value Pack to one's Enjoyment of the Game",
+       y = "Number of VPs Purchased on Central Market")
+
+```
 
 # Model
 

@@ -24,7 +24,14 @@ raw_data <- readr::read_csv("inputs/data/raw_data.csv")
 #### Data Cleaning ####
 # Remove malicious responses intended to sabotage the survey
 # Row 45, 52, and 131 are obvious malicious responses
-cleaned_data <- clean_names(raw_data[-c(45,52,131),])
+# Total playtime for row 49 is unreasonably high.
+cleaned_data <- clean_names(raw_data[-c(45,49,52,131),])
+
+#### New Variable Creation ####
+# use mutate() to create an age group column
+cleaned_data <- cleaned_data |>
+  mutate(age_group = cut(age, c(12,22,32,42,52,62,101),
+                         labels = c("13-22","23-32","33-42","43-52","53-62","63+")))
 
 #### Dataset Validation ####
 # Change the class of the variables so that they are considered factors when
@@ -57,7 +64,8 @@ agent <-
                                character_total,
                                character_female,
                                gender_main,
-                               package_free
+                               package_free,
+                               age_group
                                )) |>
   col_is_numeric(columns = vars(age,
                                 playtime_total,

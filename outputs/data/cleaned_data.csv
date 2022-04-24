@@ -1,210 +1,209 @@
-age,gender,character_total,character_female,playtime_total,playtime_main,gender_main,packages,packages_usd,package_free,importance_vp,importance_bkom,cm_vp_count,cm_bkom_count,ps_vp_usd,ps_bkom_usd,cm_outfits,ps_cosmetic_usd,ps_functional_usd,ps_total
-19,Male,10+,9,5261,817,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,5,3,6,450,50,25,400,900,1730
-21,Male,1,1,1,1,Male,Traveler Edition,10,0,5,5,0,0,0,0,0,0,0,0
-22,Male,1,1,3,3,Female,Traveler Edition,10,0,1,1,0,0,0,0,0,0,0,0
-21,Male,10+,10+,16430,13600,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,3,0,10,500,0,50,2000,3000,5800
-21,Male,4,1,800,700,Male,Traveler Edition,10,0,10,7,0,0,0,0,0,0,0,0
-24,Male,10+,9,26945,18948,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,4,2,190,38,180,20,394,1500,2500,6800
-27,Female,10+,10+,7609,5976,Female,"Traveler Edition, Eternal Winter Edition",90,0,10,5,0,0,80,0,0,2500,500,3000
-40,Female,10+,10+,15000,6000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,4,30,500,250,100,1000,1000,3000
-32,Male,10+,10+,15186,9480,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,1,0,0,400,100,0,300,24000,24943
-39,Male,8,4,6000,1000,Male,Conqueror Edition,90,0,10,7,0,4,50,0,0,110,300,600
-34,Male,10+,3,40000,17640,Female,Traveler Edition,10,0,10,10,1,30,900,500,150,300,3000,5000
-26,Male,10,8,1300,1058,Female,Explorer Edition,40,0,5,3,0,0,0,0,14,20,10,60
-21,Female,7,2,1682,300,Female,Traveler Edition,10,0,10,10,3,0,10,10,1,400,200,600
-23,Male,10+,6,5000,1200,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,5,7,1,0,400,0,1,400,100,1000
-23,Male,7,4,1000,400,Female,Got the game for free,0,1,7,7,0,0,0,0,2,50,150,200
-20,Male,10+,10+,3000,300,Female,Got the game for free,0,1,1,1,0,0,0,0,30,0,0,0
-47,Female,10+,10+,1000,500,Female,"Traveler Edition, Conqueror Edition",100,0,10,10,0,0,150,100,1,100,300,1000
-29,Male,10+,10+,5000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,7,8,0,8,0,0,3,0,40,50
-22,Male,6,4,1300,400,Male,Traveler Edition,10,0,10,8,0,0,0,0,2,6,18,25
-21,Male,10,6,27000,17000,Female,Got the game for free,0,1,2,1,1,0,0,0,5,0,200,200
-28,Male,10+,7,11500,2,Female,Traveler Edition,10,0,4,4,6,5,30,0,40,60,60,120
-25,Male,10+,10+,10000,200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,5,5,0,90,0,11,600,120,800
-26,Male,10+,6,600,75,Male,"Conqueror Edition, Eternal Winter Edition, Got the game for free",170,1,3,1,3,0,0,0,2,500,50,600
-33,Male,10+,7,40000,5924,Male,Traveler Edition,10,0,2,2,55,55,0,0,1000,0,300,300
-30,Female,10+,10+,5000,2500,Female,Traveler Edition,10,0,3,1,0,0,0,0,30,200,30,230
-22,Male,8,3,3036,1200,Male,Traveler Edition,10,0,10,4,0,0,300,0,3,150,300,900
-21,Female,2,1,150,80,Female,Got the game for free,0,1,9,9,1,3,0,0,1,0,150,150
-23,Male,10+,3,8000,400,Male,Traveler Edition,10,0,5,8,0,0,40,0,12,80,300,440
-22,Female,8,6,6500,5000,Female,Got the game for free,0,1,1,1,0,0,0,0,23,0,0,0
-30,Male,10+,10+,3000,1900,Female,Conqueror Edition,90,0,10,10,4,0,560,200,10,600,1500,3000
-23,Male,10+,10+,12000,11000,Female,"Conqueror Edition, Eternal Winter Edition",170,0,7,9,0,9,500,100,0,500,1500,2600
-26,Male,5,3,1761,1233,Female,Got the game for free,0,1,5,3,0,0,0,0,2,0,0,0
-21,Male,2,1,100,80,Male,Traveler Edition,10,0,1,1,0,0,0,0,1,0,0,0
-24,Male,10+,7,4500,2000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,3,20,30,600,200,20,600,500,4000
-28,Male,10+,1,5000,1500,Female,Traveler Edition,10,0,10,5,4,0,0,0,5,90,60,150
-20,Male,8,6,8481,1855,Female,Got the game for free,0,1,4,2,0,2,0,0,12,30,100,150
-21,Male,6,3,400,300,Female,Got the game for free,0,1,8,8,3,3,0,0,1,0,0,0
-21,Male,4,3,150,130,Female,Traveler Edition,10,0,10,10,0,0,200,150,15,50,50,300
-20,Male,4,4,200,140,Female,Got the game for free,0,1,1,9,0,0,0,0,0,0,0,0
-21,Male,1,1,5,5,Male,Got the game for free,0,1,6,5,0,0,0,0,0,0,0,0
-22,Male,7,6,730,729,Female,Traveler Edition,10,0,9,6,0,0,60,0,2,80,30,170
-22,Male,9,7,3000,1000,Female,Explorer Edition,40,0,10,9,3,0,50,0,30,100,150,400
-22,Male,3,1,330,199,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,8,7,3,4,30,30,2,30,30,30
-21,Male,2,2,26,20,Female,Traveler Edition,10,0,7,1,0,0,0,0,0,0,0,0
-22,Male,5,3,278,122,Female,Explorer Edition,40,0,4,5,0,0,0,0,0,0,0,0
-21,Male,10+,10+,14000,10272,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,2,2,30,60,0,200,30,160,1200
-22,Other,5,3,300,200,Male,Traveler Edition,10,0,7,2,0,0,30,0,0,30,0,30
-46,Male,10+,10+,1000000,21510,Female,Got the game for free,0,1,3,1,14,0,0,0,22,0,0,0
-22,Male,8,4,2500,700,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,13,0,80,40,10,30,300,600
-33,Male,10+,10+,29104,12682,Male,"Explorer Edition, Conqueror Edition",130,0,10,8,10,5,900,400,15,4000,4000,8000
-27,Male,7,6,8765,1307,Female,Got the game for free,0,1,1,1,2,0,135,0,9,500,230,860
-56,Female,7,4,1500,300,Female,Got the game for free,0,1,1,1,4,0,60,0,0,40,0,100
-21,Male,1,1,99,99,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-38,Female,4,3,2482,1986,Female,"Eternal Winter Edition, Got the game for free",80,1,8,9,0,0,10,0,3,50,300,400
-21,Male,2,1,90,76,Male,Traveler Edition,10,0,4,4,0,0,0,0,0,0,0,0
-22,Male,1,1,26,26,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-21,Male,2,2,11.5,7,Female,Traveler Edition,10,0,6,3,0,0,0,0,0,0,0,0
-22,Male,1,1,20,20,Male,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-22,Male,1,1,24,24,Female,Got the game for free,0,1,2,2,0,0,0,0,0,0,0,0
-22,Male,3,3,0,0,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-32,Male,10+,6,6000,1200,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,32,144,3500,400,500,200,600,7500
-16,Male,1,1,20,20,Female,Got the game for free,0,1,8,6,0,0,0,0,0,0,0,0
-26,Male,1,1,50,50,Female,Traveler Edition,10,0,1,1,0,0,0,0,0,0,0,0
-55,Male,8,4,5000,2500,Female,"Traveler Edition, Explorer Edition",50,0,10,8,0,10,30,0,15,0,15,57
-71,Male,10+,4,19990,12747,Female,Got the game for free,0,1,5,5,0,20,430,0,0,0,0,430
-37,Male,10+,8,13577,12500,Male,Explorer Edition,40,0,10,5,15,20,200,0,5,0,60,360
-30,Male,10+,10+,50000,34248,Female,Traveler Edition,10,0,1,1,20,30,0,0,7,0,0,0
-22,Male,1,1,50,50,Female,Got the game for free,0,1,1,1,0,0,0,0,1,20,0,20
-20,Male,2,2,42,40,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-32,Male,10,7,500,200,Female,Got the game for free,0,1,8,4,0,0,150,0,2,200,100,500
-22,Other,10,8,998,258,Female,Got the game for free,0,1,7,1,0,0,15,0,10,10,0,30
-26,Male,10+,10+,10112,5063,Male,Explorer Edition,40,0,8,1,0,0,200,0,0,100,150,500
-21,Female,8,7,2550,2200,Female,Traveler Edition,10,0,10,1,7,0,100,0,15,800,200,1000
-23,Male,8,5,1400,630,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,5,0,2,250,100,2,500,300,5000
-25,Male,6,6,4700,3000,Female,Got the game for free,0,1,10,7,1,0,50,0,3,60,40,200
-18,Male,4,2,856,200,Female,Got the game for free,0,1,10,5,0,0,0,0,0,0,10,10
-25,Male,9,7,3500,2200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,2,0,0,0,0,20,50,200,250
-24,Male,8,6,3000,1200,Female,Got the game for free,0,1,4,3,0,5,0,0,5,0,10,10
-28,Male,10+,10+,10800,4033,Female,Conqueror Edition,90,0,10,8,0,0,400,400,10,500,1000,7500
-26,Female,7,4,100,100,Male,Explorer Edition,40,0,10,10,0,0,0,0,20,30,0,60
-27,Male,10+,10+,10000,20,Male,Traveler Edition,10,0,8,8,0,20,1000,500,300,24,2000,5000
-22,Male,10+,5,7114,3420,Female,Got the game for free,0,1,3,3,0,0,0,0,3,0,60,80
-22,Male,10+,10+,0,0,Female,"Traveler Edition, Explorer Edition",50,0,10,6,0,0,90,0,12,160,50,300
-32,Male,6,5,780,465,Female,"Traveler Edition, Eternal Winter Edition",90,0,9,3,0,0,30,0,0,400,600,1000
-23,Male,7,6,4300,3700,Female,"Traveler Edition, Explorer Edition",50,0,5,8,0,0,0,70,4,120,300,400
-24,Other,10+,7,4000,3600,Female,"Traveler Edition, Conqueror Edition",100,0,1,1,0,0,0,0,7,100,20,200
-57,Male,10+,10+,12000,6385,Female,Traveler Edition,10,0,3,7,3,0,100,0,2,60,140,500
-22,Male,10+,10+,12000,3520,Male,"Traveler Edition, Conqueror Edition",100,0,5,8,0,1,0,0,30,50,60,110
-19,Male,5,4,700,600,Female,Got the game for free,0,1,3,2,1,0,0,0,1,30,20,60
-32,Male,10+,10+,20000,10000,Male,Conqueror Edition,90,0,10,10,0,0,1000,1000,0,300,1000,3500
-30,Male,8,8,1500,1100,Female,Got the game for free,0,1,8,3,0,0,0,0,12,0,0,0
-24,Male,10+,10+,33820,2040,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,8,1,3,500,200,30,200,500,5000
-41,Female,10+,7,9500,1000,Male,Traveler Edition,10,0,10,10,1,0,500,30,2,100,200,550
-24,Male,10+,10+,11000,7100,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,10,5,0,0,50,0,50,500,100,800
-23,Male,8,7,500,150,Female,Got the game for free,0,1,9,7,0,0,0,0,0,20,20,55
-23,Male,10+,8,20000,5132,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,1,2,1,150,0,10,50,100,300
-19,Male,10+,10+,7000,6500,Female,Conqueror Edition,90,0,6,5,1,0,10,0,50,100,300,400
-32,Male,6,3,1100,600,Male,Got the game for free,0,1,5,8,0,15,40,60,5,3,600,900
-20,Male,1,1,4000,3900,Female,Got the game for free,0,1,3,3,0,0,0,0,0,0,0,0
-33,Male,10,4,3500,300,Male,Explorer Edition,40,0,8,6,0,1,0,0,11,20,0,20
-22,Female,10+,10+,8300,7200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,4,3,7,200,0,3,600,300,1000
-20,Female,7,1,138,120,Female,Traveler Edition,10,0,9,6,1,0,20,0,2,60,20,80
-25,Male,10,7,7986,4287,Female,Traveler Edition,10,0,8,7,2,0,100,0,18,500,400,900
-69,Other,10+,10+,10142,5847,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,7,0,22,200,20,5,300,150,700
-27,Male,10+,4,5000,1500,Male,Traveler Edition,10,0,10,10,0,0,500,400,3,300,1200,3000
-22,Male,10+,9,1800,500,Female,Got the game for free,0,1,6,6,0,0,0,0,0,870,50,920
-20,Male,3,3,100,60,Female,Conqueror Edition,90,0,10,2,0,0,50,0,0,0,0,100
-28,Male,6,5,200,150,Female,Traveler Edition,10,0,5,5,0,0,20,0,0,0,0,20
-22,Male,10+,7,20000,17000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,0,2,500,100,2,1000,10000,15000
-24,Male,10+,10+,6000,3000,Female,Explorer Edition,40,0,10,10,5,0,0,0,4,200,300,600
-23,Male,10+,10,7000,5520,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,8,3,0,0,40,0,15,600,150,1500
-20,Male,10+,5,4200,3000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,1,0,20,50,0,3,70,300,400
-25,Male,10+,10+,20743,3109,Female,Got the game for free,0,1,10,4,100,25,100,0,100,200,500,1000
-24,Female,10+,10+,14000,850,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,10,10,0,10,200,0,10,500,50,800
-19,Male,7,5,1000,300,Female,Got the game for free,0,1,9,5,1,0,0,0,3,100,300,400
-27,Male,10+,10+,500,400,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,24,24,0,0,4,0,400,400
-22,Male,10+,9,8000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,9,2,20,300,50,20,300,200,700
-21,Male,10+,3,12000,8000,Male,Traveler Edition,10,0,5,5,13,2,0,0,4,0,240,240
-21,Male,10+,3,4052,1800,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,8,0,0,200,0,1,300,100,650
-28,Male,10+,6,5000,1000,Female,Explorer Edition,40,0,8,4,4,0,100,0,10,100,100,300
-22,Male,10+,7,8500,8000,Female,Got the game for free,0,1,8,5,15,5,500,100,40,1000,700,2500
-28,Male,7,5,100,60,Female,Got the game for free,0,1,5,2,2,0,0,0,2,0,0,0
-29,Male,10+,10+,1870,406,Female,"Traveler Edition, Explorer Edition",50,0,10,6,2,0,0,0,11,40,10,50
-29,Male,10+,9,16000,10380,Female,Got the game for free,0,1,10,10,0,0,0,0,1,50,30,80
-24,Male,10+,10+,8700,1800,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,8,0,0,100,200,5,400,200,900
-33,Male,10+,10+,12000,500,Female,Explorer Edition,40,0,6,10,5,20,200,100,100,150,450,1000
-21,Male,10+,7,7000,3569,Female,Explorer Edition,40,0,2,1,1,0,20,0,12,40,60,120
-23,Male,10+,5,2453,643,Female,Explorer Edition,40,0,9,7,0,0,100,0,3,350,200,700
-20,Male,5,1,2305,2290,Male,"Explorer Edition, Eternal Winter Edition",120,0,10,6,0,0,60,0,0,0,200,260
-32,Male,10+,10+,9999,300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,10,10,0,0,1000,1000,0,2000,1000,5000
-29,Male,10+,3,1200,500,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,0,0,250,250,3,100,300,1500
-21,Male,10+,10+,6000,1987,Female,"Traveler Edition, Eternal Winter Edition",90,0,10,10,1,0,200,150,3,1250,400,2000
-23,Male,3,1,2000,2000,Male,Traveler Edition,10,0,5,5,0,0,0,0,0,0,0,0
-23,Male,10+,10+,15000,9400,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,8,8,4,30,200,100,100,150,900,1400
-22,Female,10+,10+,2000,1500,Female,Got the game for free,0,1,8,2,0,0,30,0,6,200,50,400
-30,Other,10+,10+,33000,32000,Female,"Explorer Edition, Eternal Winter Edition",120,0,1,1,3,15,75,0,5,1000,500,1500
-32,Male,10+,3,20000,7200,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,7,3,0,500,300,4,90,650,2000
-20,Male,8,6,3070,480,Female,Traveler Edition,10,0,8,9,0,0,0,0,12,0,60,50
-22,Male,8,2,450,150,Male,Explorer Edition,40,0,7,2,0,0,0,0,5,30,150,200
-22,Male,10+,10+,19000,4560,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,6,8,5,3,100,20,30,500,700,1600
-28,Male,6,3,768,500,Male,Conqueror Edition,90,0,10,10,0,0,300,0,10,300,100,800
-25,Male,6,5,1334,49,Female,Got the game for free,0,1,3,1,0,0,0,0,0,0,0,0
-25,Male,10+,10+,3000,750,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,3,0,0,300,0,15,2000,500,3000
-25,Female,10+,8,4000,1000,Female,"Traveler Edition, Eternal Winter Edition",90,0,9,9,20,30,200,60,15,150,100,800
-27,Male,10+,10+,5000,1500,Female,Got the game for free,0,1,7,7,2,2,10,0,3,25,80,200
-20,Male,7,5,1650,650,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,7,8,9,550,150,0,350,100,650
-22,Female,10,8,2306,967,Male,Traveler Edition,10,0,5,9,3,0,0,0,4,0,0,0
-22,Male,7,3,2200,1300,Female,Got the game for free,0,1,3,7,0,2,0,0,10,0,10,10
-24,Male,10+,10+,28000,17.784,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,1,5,500,800,10,1000,500,3500
-27,Female,10+,10+,21604,7304,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,1,5,0,0,15,1500,5000,6500
-23,Male,9,7,6000,1500,Female,Traveler Edition,10,0,6,2,0,3,0,0,50,0,60,60
-27,Male,10+,8,20000,2000,Male,Traveler Edition,10,0,10,7,10,70,350,20,50,300,100,900
-35,Male,10+,10+,40000,20000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,1,1,0,200,0,30,200,200,500
-25,Male,10+,10+,3500,1300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,3,1,0,1,0,0,20,0,50,60
-26,Male,10+,10+,9000,4000,Female,Conqueror Edition,90,0,9,8,0,5,200,100,22,400,200,1500
-25,Male,10+,7,10000,1000,Female,"Traveler Edition, Explorer Edition",50,0,6,1,0,0,200,0,2,500,500,2000
-18,Male,9,6,500,100,Female,Got the game for free,0,1,7,3,1,1,0,0,0,40,10,60
-31,Male,10+,8,3500,3025,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,8,0,0,0,12,2,200,300,500
-41,Female,10+,10+,12000,10000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,4,4,2,0,60,30,30,60,800,1200
-23,Male,10+,10+,5000,2500,Female,Traveler Edition,10,0,10,1,1,15,100,0,3,350,500,1000
-27,Female,10+,10+,16000,11376,Female,Got the game for free,0,1,5,5,0,0,0,0,10,20,20,40
-24,Male,3,3,2250,2000,Female,Conqueror Edition,90,0,10,8,0,2,300,200,0,1500,1000,3000
-22,Male,10+,10+,10000,7500,Female,Traveler Edition,10,0,9,4,0,1,75,10,6,500,200,1000
-19,Male,10+,10+,4527,1200,Female,Traveler Edition,10,0,10,7,2,0,120,0,400,90,400,1000
-18,Male,1,0,8,4,Male,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0
-30,Male,10+,10+,40000,25000,Female,Traveler Edition,10,0,10,10,15,0,0,0,40,0,40,40
-24,Male,10+,6,20000,14000,Male,Conqueror Edition,90,0,6,1,1,0,300,0,3,360,1200,1860
-22,Male,10+,10,2000,1300,Female,Conqueror Edition,90,0,3,1,0,0,0,0,0,50,10,300
-38,Male,7,4,1000,500,Female,Conqueror Edition,90,0,2,2,3,0,50,50,8,300,100,450
-30,Male,6,5,1914,5280,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,5,7,3,0,50,0,2,600,200,800
-30,Male,5,5,5000,3000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,1,1,0,0,0,0,30,300,0,300
-35,Male,10+,10+,10000,8000,Female,Got the game for free,0,1,9,9,3,30,200,0,30,0,200,450
-24,Male,10+,8,10922,3243,Male,Got the game for free,0,1,8,7,1,14,525,125,0,2500,1500,6110
-20,Male,10+,7,25000,12000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,7,10,4,0,500,300,15,3500,1500,6000
-25,Female,10,8,2500,1750,Female,"Traveler Edition, Explorer Edition",50,0,9,1,0,0,0,0,14,20,180,200
-28,Male,10+,4,3000,600,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,0,0,0,0,5,200,400,700
-28,Male,10+,10,18500,9600,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,9,5,8,5,200,0,15,300,350,1010
-21,Male,7,5,300,290,Male,Eternal Winter Edition,80,0,10,9,0,0,0,0,0,100,200,300
-18,Male,7,3,1347,800,Male,Explorer Edition,40,0,9,7,0,1,0,0,40,0,60,60
-25,Male,10+,7,2000,500,Male,Traveler Edition,10,0,2,1,0,0,60,0,6,150,300,600
-17,Male,3,1,159,127,Female,"Explorer Edition, Got the game for free",40,1,6,8,0,0,0,0,2,30,40,120
-17,Male,2,2,467,371,Female,Got the game for free,0,1,1,1,0,1,0,0,0,0,0,0
-23,Male,10+,6,2000,400,Female,"Explorer Edition, Got the game for free",40,1,4,2,0,0,0,0,2,0,30,40
-20,Male,9,5,3250,1200,Female,Got the game for free,0,1,6,6,0,0,50,0,3,100,50,300
-28,Male,10+,10+,36000,30000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,9,1,5,300,50,150,300,2000,3000
-49,Female,10+,10+,1500,300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,1,2,200,100,30,2000,500,2500
-24,Male,10+,9,13000,9000,Female,Conqueror Edition,90,0,10,5,0,10,250,20,10,400,150,1000
-13,Male,6,3,156,100,Male,Conqueror Edition,90,0,7,1,0,0,0,0,6,0,0,0
-41,Female,3,3,1100,900,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,3,0,30,10,1,500,200,1000
-19,Male,8,3,83,40,Female,Got the game for free,0,1,3,9,0,0,0,0,0,0,0,0
-22,Male,10,8,1560,60,Female,Traveler Edition,10,0,4,2,4,0,0,0,11,0,0,0
-23,Male,10+,10,3163,397,Female,Traveler Edition,10,0,8,3,0,0,0,0,6,130,50,200
-20,Male,7,6,2400,1920,Female,Traveler Edition,10,0,3,2,0,0,0,0,4,0,5,50
-23,Male,10+,10+,28900,25200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,8,10,0,900,0,15,8000,3000,11000
-22,Male,10+,7,8760,8000,Female,Traveler Edition,10,0,5,4,0,30,0,300,5,200,50,550
-19,Male,10+,10+,7000,5000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,1,0,20,300,0,50,500,100,1000
-22,Male,5,5,3000,744,Female,Traveler Edition,10,0,8,4,0,0,0,0,8,100,500,650
-23,Male,1,1,21,21,Female,Got the game for free,0,1,2,2,0,0,0,0,0,0,0,0
-24,Male,5,1,3300,2000,Male,Got the game for free,0,1,1,1,4,1,0,0,10,0,0,0
-25,Male,10+,10,24337,18015,Male,Explorer Edition,40,0,7,7,1,60,100,0,6,48,400,560
-27,Male,10+,10,43320,21013,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,8,6,0,0,200,0,1500,100,400,1200
-18,Male,10+,3,4500,1450,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,0,30,215,80,12,580,400,1100
-27,Male,8,6,1000,200,Female,Got the game for free,0,1,8,8,0,0,0,0,3,0,50,50
-32,Male,10+,1,20000,7200,Male,Traveler Edition,10,0,1,10,0,0,30,0,0,68,300,500
-21,Male,10+,7,26871,9811,Male,Conqueror Edition,90,0,9,3,4,30,400,0,20,60,300,885
-21,Female,10+,3,4600,1900,Female,Traveler Edition,10,0,3,1,1,0,0,0,1,100,300,450
-21,Male,9,1,2000,300,Female,Got the game for free,0,1,8,2,0,0,0,0,1,0,0,0
-20,Male,10+,5,6000,3000,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,2,1,0,200,0,30,150,250,600
-33,Male,10+,10+,5000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,7,0,0,200,100,0,2500,1000,3500
+age,gender,character_total,character_female,playtime_total,playtime_main,gender_main,packages,packages_usd,package_free,importance_vp,importance_bkom,cm_vp_count,cm_bkom_count,ps_vp_usd,ps_bkom_usd,cm_outfits,ps_cosmetic_usd,ps_functional_usd,ps_total,age_group
+19,Male,10+,9,5261,817,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,5,3,6,450,50,25,400,900,1730,13-22
+21,Male,1,1,1,1,Male,Traveler Edition,10,0,5,5,0,0,0,0,0,0,0,0,13-22
+22,Male,1,1,3,3,Female,Traveler Edition,10,0,1,1,0,0,0,0,0,0,0,0,13-22
+21,Male,10+,10+,16430,13600,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,3,0,10,500,0,50,2000,3000,5800,13-22
+21,Male,4,1,800,700,Male,Traveler Edition,10,0,10,7,0,0,0,0,0,0,0,0,13-22
+24,Male,10+,9,26945,18948,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,4,2,190,38,180,20,394,1500,2500,6800,23-32
+27,Female,10+,10+,7609,5976,Female,"Traveler Edition, Eternal Winter Edition",90,0,10,5,0,0,80,0,0,2500,500,3000,23-32
+40,Female,10+,10+,15000,6000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,4,30,500,250,100,1000,1000,3000,33-42
+32,Male,10+,10+,15186,9480,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,1,0,0,400,100,0,300,24000,24943,23-32
+39,Male,8,4,6000,1000,Male,Conqueror Edition,90,0,10,7,0,4,50,0,0,110,300,600,33-42
+34,Male,10+,3,40000,17640,Female,Traveler Edition,10,0,10,10,1,30,900,500,150,300,3000,5000,33-42
+26,Male,10,8,1300,1058,Female,Explorer Edition,40,0,5,3,0,0,0,0,14,20,10,60,23-32
+21,Female,7,2,1682,300,Female,Traveler Edition,10,0,10,10,3,0,10,10,1,400,200,600,13-22
+23,Male,10+,6,5000,1200,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,5,7,1,0,400,0,1,400,100,1000,23-32
+23,Male,7,4,1000,400,Female,Got the game for free,0,1,7,7,0,0,0,0,2,50,150,200,23-32
+20,Male,10+,10+,3000,300,Female,Got the game for free,0,1,1,1,0,0,0,0,30,0,0,0,13-22
+47,Female,10+,10+,1000,500,Female,"Traveler Edition, Conqueror Edition",100,0,10,10,0,0,150,100,1,100,300,1000,43-52
+29,Male,10+,10+,5000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,7,8,0,8,0,0,3,0,40,50,23-32
+22,Male,6,4,1300,400,Male,Traveler Edition,10,0,10,8,0,0,0,0,2,6,18,25,13-22
+21,Male,10,6,27000,17000,Female,Got the game for free,0,1,2,1,1,0,0,0,5,0,200,200,13-22
+28,Male,10+,7,11500,2,Female,Traveler Edition,10,0,4,4,6,5,30,0,40,60,60,120,23-32
+25,Male,10+,10+,10000,200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,5,5,0,90,0,11,600,120,800,23-32
+26,Male,10+,6,600,75,Male,"Conqueror Edition, Eternal Winter Edition, Got the game for free",170,1,3,1,3,0,0,0,2,500,50,600,23-32
+33,Male,10+,7,40000,5924,Male,Traveler Edition,10,0,2,2,55,55,0,0,1000,0,300,300,33-42
+30,Female,10+,10+,5000,2500,Female,Traveler Edition,10,0,3,1,0,0,0,0,30,200,30,230,23-32
+22,Male,8,3,3036,1200,Male,Traveler Edition,10,0,10,4,0,0,300,0,3,150,300,900,13-22
+21,Female,2,1,150,80,Female,Got the game for free,0,1,9,9,1,3,0,0,1,0,150,150,13-22
+23,Male,10+,3,8000,400,Male,Traveler Edition,10,0,5,8,0,0,40,0,12,80,300,440,23-32
+22,Female,8,6,6500,5000,Female,Got the game for free,0,1,1,1,0,0,0,0,23,0,0,0,13-22
+30,Male,10+,10+,3000,1900,Female,Conqueror Edition,90,0,10,10,4,0,560,200,10,600,1500,3000,23-32
+23,Male,10+,10+,12000,11000,Female,"Conqueror Edition, Eternal Winter Edition",170,0,7,9,0,9,500,100,0,500,1500,2600,23-32
+26,Male,5,3,1761,1233,Female,Got the game for free,0,1,5,3,0,0,0,0,2,0,0,0,23-32
+21,Male,2,1,100,80,Male,Traveler Edition,10,0,1,1,0,0,0,0,1,0,0,0,13-22
+24,Male,10+,7,4500,2000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,3,20,30,600,200,20,600,500,4000,23-32
+28,Male,10+,1,5000,1500,Female,Traveler Edition,10,0,10,5,4,0,0,0,5,90,60,150,23-32
+20,Male,8,6,8481,1855,Female,Got the game for free,0,1,4,2,0,2,0,0,12,30,100,150,13-22
+21,Male,6,3,400,300,Female,Got the game for free,0,1,8,8,3,3,0,0,1,0,0,0,13-22
+21,Male,4,3,150,130,Female,Traveler Edition,10,0,10,10,0,0,200,150,15,50,50,300,13-22
+20,Male,4,4,200,140,Female,Got the game for free,0,1,1,9,0,0,0,0,0,0,0,0,13-22
+21,Male,1,1,5,5,Male,Got the game for free,0,1,6,5,0,0,0,0,0,0,0,0,13-22
+22,Male,7,6,730,729,Female,Traveler Edition,10,0,9,6,0,0,60,0,2,80,30,170,13-22
+22,Male,9,7,3000,1000,Female,Explorer Edition,40,0,10,9,3,0,50,0,30,100,150,400,13-22
+22,Male,3,1,330,199,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,8,7,3,4,30,30,2,30,30,30,13-22
+21,Male,2,2,26,20,Female,Traveler Edition,10,0,7,1,0,0,0,0,0,0,0,0,13-22
+22,Male,5,3,278,122,Female,Explorer Edition,40,0,4,5,0,0,0,0,0,0,0,0,13-22
+21,Male,10+,10+,14000,10272,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,2,2,30,60,0,200,30,160,1200,13-22
+22,Other,5,3,300,200,Male,Traveler Edition,10,0,7,2,0,0,30,0,0,30,0,30,13-22
+22,Male,8,4,2500,700,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,13,0,80,40,10,30,300,600,13-22
+33,Male,10+,10+,29104,12682,Male,"Explorer Edition, Conqueror Edition",130,0,10,8,10,5,900,400,15,4000,4000,8000,33-42
+27,Male,7,6,8765,1307,Female,Got the game for free,0,1,1,1,2,0,135,0,9,500,230,860,23-32
+56,Female,7,4,1500,300,Female,Got the game for free,0,1,1,1,4,0,60,0,0,40,0,100,53-62
+21,Male,1,1,99,99,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+38,Female,4,3,2482,1986,Female,"Eternal Winter Edition, Got the game for free",80,1,8,9,0,0,10,0,3,50,300,400,33-42
+21,Male,2,1,90,76,Male,Traveler Edition,10,0,4,4,0,0,0,0,0,0,0,0,13-22
+22,Male,1,1,26,26,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+21,Male,2,2,11.5,7,Female,Traveler Edition,10,0,6,3,0,0,0,0,0,0,0,0,13-22
+22,Male,1,1,20,20,Male,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+22,Male,1,1,24,24,Female,Got the game for free,0,1,2,2,0,0,0,0,0,0,0,0,13-22
+22,Male,3,3,0,0,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+32,Male,10+,6,6000,1200,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,32,144,3500,400,500,200,600,7500,23-32
+16,Male,1,1,20,20,Female,Got the game for free,0,1,8,6,0,0,0,0,0,0,0,0,13-22
+26,Male,1,1,50,50,Female,Traveler Edition,10,0,1,1,0,0,0,0,0,0,0,0,23-32
+55,Male,8,4,5000,2500,Female,"Traveler Edition, Explorer Edition",50,0,10,8,0,10,30,0,15,0,15,57,53-62
+71,Male,10+,4,19990,12747,Female,Got the game for free,0,1,5,5,0,20,430,0,0,0,0,430,63+
+37,Male,10+,8,13577,12500,Male,Explorer Edition,40,0,10,5,15,20,200,0,5,0,60,360,33-42
+30,Male,10+,10+,50000,34248,Female,Traveler Edition,10,0,1,1,20,30,0,0,7,0,0,0,23-32
+22,Male,1,1,50,50,Female,Got the game for free,0,1,1,1,0,0,0,0,1,20,0,20,13-22
+20,Male,2,2,42,40,Female,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+32,Male,10,7,500,200,Female,Got the game for free,0,1,8,4,0,0,150,0,2,200,100,500,23-32
+22,Other,10,8,998,258,Female,Got the game for free,0,1,7,1,0,0,15,0,10,10,0,30,13-22
+26,Male,10+,10+,10112,5063,Male,Explorer Edition,40,0,8,1,0,0,200,0,0,100,150,500,23-32
+21,Female,8,7,2550,2200,Female,Traveler Edition,10,0,10,1,7,0,100,0,15,800,200,1000,13-22
+23,Male,8,5,1400,630,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,5,0,2,250,100,2,500,300,5000,23-32
+25,Male,6,6,4700,3000,Female,Got the game for free,0,1,10,7,1,0,50,0,3,60,40,200,23-32
+18,Male,4,2,856,200,Female,Got the game for free,0,1,10,5,0,0,0,0,0,0,10,10,13-22
+25,Male,9,7,3500,2200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,2,0,0,0,0,20,50,200,250,23-32
+24,Male,8,6,3000,1200,Female,Got the game for free,0,1,4,3,0,5,0,0,5,0,10,10,23-32
+28,Male,10+,10+,10800,4033,Female,Conqueror Edition,90,0,10,8,0,0,400,400,10,500,1000,7500,23-32
+26,Female,7,4,100,100,Male,Explorer Edition,40,0,10,10,0,0,0,0,20,30,0,60,23-32
+27,Male,10+,10+,10000,20,Male,Traveler Edition,10,0,8,8,0,20,1000,500,300,24,2000,5000,23-32
+22,Male,10+,5,7114,3420,Female,Got the game for free,0,1,3,3,0,0,0,0,3,0,60,80,13-22
+22,Male,10+,10+,0,0,Female,"Traveler Edition, Explorer Edition",50,0,10,6,0,0,90,0,12,160,50,300,13-22
+32,Male,6,5,780,465,Female,"Traveler Edition, Eternal Winter Edition",90,0,9,3,0,0,30,0,0,400,600,1000,23-32
+23,Male,7,6,4300,3700,Female,"Traveler Edition, Explorer Edition",50,0,5,8,0,0,0,70,4,120,300,400,23-32
+24,Other,10+,7,4000,3600,Female,"Traveler Edition, Conqueror Edition",100,0,1,1,0,0,0,0,7,100,20,200,23-32
+57,Male,10+,10+,12000,6385,Female,Traveler Edition,10,0,3,7,3,0,100,0,2,60,140,500,53-62
+22,Male,10+,10+,12000,3520,Male,"Traveler Edition, Conqueror Edition",100,0,5,8,0,1,0,0,30,50,60,110,13-22
+19,Male,5,4,700,600,Female,Got the game for free,0,1,3,2,1,0,0,0,1,30,20,60,13-22
+32,Male,10+,10+,20000,10000,Male,Conqueror Edition,90,0,10,10,0,0,1000,1000,0,300,1000,3500,23-32
+30,Male,8,8,1500,1100,Female,Got the game for free,0,1,8,3,0,0,0,0,12,0,0,0,23-32
+24,Male,10+,10+,33820,2040,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,8,1,3,500,200,30,200,500,5000,23-32
+41,Female,10+,7,9500,1000,Male,Traveler Edition,10,0,10,10,1,0,500,30,2,100,200,550,33-42
+24,Male,10+,10+,11000,7100,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,10,5,0,0,50,0,50,500,100,800,23-32
+23,Male,8,7,500,150,Female,Got the game for free,0,1,9,7,0,0,0,0,0,20,20,55,23-32
+23,Male,10+,8,20000,5132,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,3,1,2,1,150,0,10,50,100,300,23-32
+19,Male,10+,10+,7000,6500,Female,Conqueror Edition,90,0,6,5,1,0,10,0,50,100,300,400,13-22
+32,Male,6,3,1100,600,Male,Got the game for free,0,1,5,8,0,15,40,60,5,3,600,900,23-32
+20,Male,1,1,4000,3900,Female,Got the game for free,0,1,3,3,0,0,0,0,0,0,0,0,13-22
+33,Male,10,4,3500,300,Male,Explorer Edition,40,0,8,6,0,1,0,0,11,20,0,20,33-42
+22,Female,10+,10+,8300,7200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,4,3,7,200,0,3,600,300,1000,13-22
+20,Female,7,1,138,120,Female,Traveler Edition,10,0,9,6,1,0,20,0,2,60,20,80,13-22
+25,Male,10,7,7986,4287,Female,Traveler Edition,10,0,8,7,2,0,100,0,18,500,400,900,23-32
+69,Other,10+,10+,10142,5847,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,7,0,22,200,20,5,300,150,700,63+
+27,Male,10+,4,5000,1500,Male,Traveler Edition,10,0,10,10,0,0,500,400,3,300,1200,3000,23-32
+22,Male,10+,9,1800,500,Female,Got the game for free,0,1,6,6,0,0,0,0,0,870,50,920,13-22
+20,Male,3,3,100,60,Female,Conqueror Edition,90,0,10,2,0,0,50,0,0,0,0,100,13-22
+28,Male,6,5,200,150,Female,Traveler Edition,10,0,5,5,0,0,20,0,0,0,0,20,23-32
+22,Male,10+,7,20000,17000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,0,2,500,100,2,1000,10000,15000,13-22
+24,Male,10+,10+,6000,3000,Female,Explorer Edition,40,0,10,10,5,0,0,0,4,200,300,600,23-32
+23,Male,10+,10,7000,5520,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,8,3,0,0,40,0,15,600,150,1500,23-32
+20,Male,10+,5,4200,3000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,1,0,20,50,0,3,70,300,400,13-22
+25,Male,10+,10+,20743,3109,Female,Got the game for free,0,1,10,4,100,25,100,0,100,200,500,1000,23-32
+24,Female,10+,10+,14000,850,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,10,10,0,10,200,0,10,500,50,800,23-32
+19,Male,7,5,1000,300,Female,Got the game for free,0,1,9,5,1,0,0,0,3,100,300,400,13-22
+27,Male,10+,10+,500,400,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,24,24,0,0,4,0,400,400,23-32
+22,Male,10+,9,8000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,9,2,20,300,50,20,300,200,700,13-22
+21,Male,10+,3,12000,8000,Male,Traveler Edition,10,0,5,5,13,2,0,0,4,0,240,240,13-22
+21,Male,10+,3,4052,1800,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,8,0,0,200,0,1,300,100,650,13-22
+28,Male,10+,6,5000,1000,Female,Explorer Edition,40,0,8,4,4,0,100,0,10,100,100,300,23-32
+22,Male,10+,7,8500,8000,Female,Got the game for free,0,1,8,5,15,5,500,100,40,1000,700,2500,13-22
+28,Male,7,5,100,60,Female,Got the game for free,0,1,5,2,2,0,0,0,2,0,0,0,23-32
+29,Male,10+,10+,1870,406,Female,"Traveler Edition, Explorer Edition",50,0,10,6,2,0,0,0,11,40,10,50,23-32
+29,Male,10+,9,16000,10380,Female,Got the game for free,0,1,10,10,0,0,0,0,1,50,30,80,23-32
+24,Male,10+,10+,8700,1800,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,8,0,0,100,200,5,400,200,900,23-32
+33,Male,10+,10+,12000,500,Female,Explorer Edition,40,0,6,10,5,20,200,100,100,150,450,1000,33-42
+21,Male,10+,7,7000,3569,Female,Explorer Edition,40,0,2,1,1,0,20,0,12,40,60,120,13-22
+23,Male,10+,5,2453,643,Female,Explorer Edition,40,0,9,7,0,0,100,0,3,350,200,700,23-32
+20,Male,5,1,2305,2290,Male,"Explorer Edition, Eternal Winter Edition",120,0,10,6,0,0,60,0,0,0,200,260,13-22
+32,Male,10+,10+,9999,300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition, Got the game for free",220,1,10,10,0,0,1000,1000,0,2000,1000,5000,23-32
+29,Male,10+,3,1200,500,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,0,0,250,250,3,100,300,1500,23-32
+21,Male,10+,10+,6000,1987,Female,"Traveler Edition, Eternal Winter Edition",90,0,10,10,1,0,200,150,3,1250,400,2000,13-22
+23,Male,3,1,2000,2000,Male,Traveler Edition,10,0,5,5,0,0,0,0,0,0,0,0,23-32
+23,Male,10+,10+,15000,9400,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,8,8,4,30,200,100,100,150,900,1400,23-32
+22,Female,10+,10+,2000,1500,Female,Got the game for free,0,1,8,2,0,0,30,0,6,200,50,400,13-22
+30,Other,10+,10+,33000,32000,Female,"Explorer Edition, Eternal Winter Edition",120,0,1,1,3,15,75,0,5,1000,500,1500,23-32
+32,Male,10+,3,20000,7200,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,7,3,0,500,300,4,90,650,2000,23-32
+20,Male,8,6,3070,480,Female,Traveler Edition,10,0,8,9,0,0,0,0,12,0,60,50,13-22
+22,Male,8,2,450,150,Male,Explorer Edition,40,0,7,2,0,0,0,0,5,30,150,200,13-22
+22,Male,10+,10+,19000,4560,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,6,8,5,3,100,20,30,500,700,1600,13-22
+28,Male,6,3,768,500,Male,Conqueror Edition,90,0,10,10,0,0,300,0,10,300,100,800,23-32
+25,Male,6,5,1334,49,Female,Got the game for free,0,1,3,1,0,0,0,0,0,0,0,0,23-32
+25,Male,10+,10+,3000,750,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,3,0,0,300,0,15,2000,500,3000,23-32
+25,Female,10+,8,4000,1000,Female,"Traveler Edition, Eternal Winter Edition",90,0,9,9,20,30,200,60,15,150,100,800,23-32
+27,Male,10+,10+,5000,1500,Female,Got the game for free,0,1,7,7,2,2,10,0,3,25,80,200,23-32
+20,Male,7,5,1650,650,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,7,8,9,550,150,0,350,100,650,13-22
+22,Female,10,8,2306,967,Male,Traveler Edition,10,0,5,9,3,0,0,0,4,0,0,0,13-22
+22,Male,7,3,2200,1300,Female,Got the game for free,0,1,3,7,0,2,0,0,10,0,10,10,13-22
+24,Male,10+,10+,28000,17.784,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,1,5,500,800,10,1000,500,3500,23-32
+27,Female,10+,10+,21604,7304,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,1,5,0,0,15,1500,5000,6500,23-32
+23,Male,9,7,6000,1500,Female,Traveler Edition,10,0,6,2,0,3,0,0,50,0,60,60,23-32
+27,Male,10+,8,20000,2000,Male,Traveler Edition,10,0,10,7,10,70,350,20,50,300,100,900,23-32
+35,Male,10+,10+,40000,20000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,1,1,0,200,0,30,200,200,500,33-42
+25,Male,10+,10+,3500,1300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,3,1,0,1,0,0,20,0,50,60,23-32
+26,Male,10+,10+,9000,4000,Female,Conqueror Edition,90,0,9,8,0,5,200,100,22,400,200,1500,23-32
+25,Male,10+,7,10000,1000,Female,"Traveler Edition, Explorer Edition",50,0,6,1,0,0,200,0,2,500,500,2000,23-32
+18,Male,9,6,500,100,Female,Got the game for free,0,1,7,3,1,1,0,0,0,40,10,60,13-22
+31,Male,10+,8,3500,3025,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,8,0,0,0,12,2,200,300,500,23-32
+41,Female,10+,10+,12000,10000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,4,4,2,0,60,30,30,60,800,1200,33-42
+23,Male,10+,10+,5000,2500,Female,Traveler Edition,10,0,10,1,1,15,100,0,3,350,500,1000,23-32
+27,Female,10+,10+,16000,11376,Female,Got the game for free,0,1,5,5,0,0,0,0,10,20,20,40,23-32
+24,Male,3,3,2250,2000,Female,Conqueror Edition,90,0,10,8,0,2,300,200,0,1500,1000,3000,23-32
+22,Male,10+,10+,10000,7500,Female,Traveler Edition,10,0,9,4,0,1,75,10,6,500,200,1000,13-22
+19,Male,10+,10+,4527,1200,Female,Traveler Edition,10,0,10,7,2,0,120,0,400,90,400,1000,13-22
+18,Male,1,0,8,4,Male,Got the game for free,0,1,1,1,0,0,0,0,0,0,0,0,13-22
+30,Male,10+,10+,40000,25000,Female,Traveler Edition,10,0,10,10,15,0,0,0,40,0,40,40,23-32
+24,Male,10+,6,20000,14000,Male,Conqueror Edition,90,0,6,1,1,0,300,0,3,360,1200,1860,23-32
+22,Male,10+,10,2000,1300,Female,Conqueror Edition,90,0,3,1,0,0,0,0,0,50,10,300,13-22
+38,Male,7,4,1000,500,Female,Conqueror Edition,90,0,2,2,3,0,50,50,8,300,100,450,33-42
+30,Male,6,5,1914,5280,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,5,7,3,0,50,0,2,600,200,800,23-32
+30,Male,5,5,5000,3000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,1,1,0,0,0,0,30,300,0,300,23-32
+35,Male,10+,10+,10000,8000,Female,Got the game for free,0,1,9,9,3,30,200,0,30,0,200,450,33-42
+24,Male,10+,8,10922,3243,Male,Got the game for free,0,1,8,7,1,14,525,125,0,2500,1500,6110,23-32
+20,Male,10+,7,25000,12000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,7,10,4,0,500,300,15,3500,1500,6000,13-22
+25,Female,10,8,2500,1750,Female,"Traveler Edition, Explorer Edition",50,0,9,1,0,0,0,0,14,20,180,200,23-32
+28,Male,10+,4,3000,600,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,10,0,0,0,0,5,200,400,700,23-32
+28,Male,10+,10,18500,9600,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Got the game for free",140,1,9,5,8,5,200,0,15,300,350,1010,23-32
+21,Male,7,5,300,290,Male,Eternal Winter Edition,80,0,10,9,0,0,0,0,0,100,200,300,13-22
+18,Male,7,3,1347,800,Male,Explorer Edition,40,0,9,7,0,1,0,0,40,0,60,60,13-22
+25,Male,10+,7,2000,500,Male,Traveler Edition,10,0,2,1,0,0,60,0,6,150,300,600,23-32
+17,Male,3,1,159,127,Female,"Explorer Edition, Got the game for free",40,1,6,8,0,0,0,0,2,30,40,120,13-22
+17,Male,2,2,467,371,Female,Got the game for free,0,1,1,1,0,1,0,0,0,0,0,0,13-22
+23,Male,10+,6,2000,400,Female,"Explorer Edition, Got the game for free",40,1,4,2,0,0,0,0,2,0,30,40,23-32
+20,Male,9,5,3250,1200,Female,Got the game for free,0,1,6,6,0,0,50,0,3,100,50,300,13-22
+28,Male,10+,10+,36000,30000,Male,"Conqueror Edition, Eternal Winter Edition",170,0,10,9,1,5,300,50,150,300,2000,3000,23-32
+49,Female,10+,10+,1500,300,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,1,2,200,100,30,2000,500,2500,43-52
+24,Male,10+,9,13000,9000,Female,Conqueror Edition,90,0,10,5,0,10,250,20,10,400,150,1000,23-32
+13,Male,6,3,156,100,Male,Conqueror Edition,90,0,7,1,0,0,0,0,6,0,0,0,13-22
+41,Female,3,3,1100,900,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,10,5,3,0,30,10,1,500,200,1000,33-42
+19,Male,8,3,83,40,Female,Got the game for free,0,1,3,9,0,0,0,0,0,0,0,0,13-22
+22,Male,10,8,1560,60,Female,Traveler Edition,10,0,4,2,4,0,0,0,11,0,0,0,13-22
+23,Male,10+,10,3163,397,Female,Traveler Edition,10,0,8,3,0,0,0,0,6,130,50,200,23-32
+20,Male,7,6,2400,1920,Female,Traveler Edition,10,0,3,2,0,0,0,0,4,0,5,50,13-22
+23,Male,10+,10+,28900,25200,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,8,10,0,900,0,15,8000,3000,11000,23-32
+22,Male,10+,7,8760,8000,Female,Traveler Edition,10,0,5,4,0,30,0,300,5,200,50,550,13-22
+19,Male,10+,10+,7000,5000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,9,1,0,20,300,0,50,500,100,1000,13-22
+22,Male,5,5,3000,744,Female,Traveler Edition,10,0,8,4,0,0,0,0,8,100,500,650,13-22
+23,Male,1,1,21,21,Female,Got the game for free,0,1,2,2,0,0,0,0,0,0,0,0,23-32
+24,Male,5,1,3300,2000,Male,Got the game for free,0,1,1,1,4,1,0,0,10,0,0,0,23-32
+25,Male,10+,10,24337,18015,Male,Explorer Edition,40,0,7,7,1,60,100,0,6,48,400,560,23-32
+27,Male,10+,10,43320,21013,Male,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,8,6,0,0,200,0,1500,100,400,1200,23-32
+18,Male,10+,3,4500,1450,Female,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,10,10,0,30,215,80,12,580,400,1100,13-22
+27,Male,8,6,1000,200,Female,Got the game for free,0,1,8,8,0,0,0,0,3,0,50,50,23-32
+32,Male,10+,1,20000,7200,Male,Traveler Edition,10,0,1,10,0,0,30,0,0,68,300,500,23-32
+21,Male,10+,7,26871,9811,Male,Conqueror Edition,90,0,9,3,4,30,400,0,20,60,300,885,13-22
+21,Female,10+,3,4600,1900,Female,Traveler Edition,10,0,3,1,1,0,0,0,1,100,300,450,13-22
+21,Male,9,1,2000,300,Female,Got the game for free,0,1,8,2,0,0,0,0,1,0,0,0,13-22
+20,Male,10+,5,6000,3000,Male,"Traveler Edition, Explorer Edition, Conqueror Edition, Eternal Winter Edition",220,0,7,2,1,0,200,0,30,150,250,600,13-22
+33,Male,10+,10+,5000,2000,Female,"Traveler Edition, Explorer Edition, Conqueror Edition",140,0,7,7,0,0,200,100,0,2500,1000,3500,33-42
