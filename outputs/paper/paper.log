@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.12)  24 APR 2022 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.12)  24 APR 2022 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,37 +486,48 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: Reference `tab:graph1' on page 4 undefined on input line 363.
 
-<paper_files/figure-latex/graph1-1.pdf, id=85, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph1-1.pdf, id=89, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph1-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph1-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph1-1.pdf  used on input line 373.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
 [4 <./paper_files/figure-latex/graph1-1.pdf>]
-<paper_files/figure-latex/graph2-1.pdf, id=100, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph2-1.pdf, id=104, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph2-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph2-1.pdf>
-Package pdftex.def Info: paper_files/figure-latex/graph2-1.pdf  used on input line 406.
+Package pdftex.def Info: paper_files/figure-latex/graph2-1.pdf  used on input line 408.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
-[5 <./paper_files/figure-latex/graph2-1.pdf>] [6] [7] [8] (./paper.aux)
+<paper_files/figure-latex/graph3-1.pdf, id=106, 578.16pt x 289.08pt>
+File: paper_files/figure-latex/graph3-1.pdf Graphic file (type pdf)
+<use paper_files/figure-latex/graph3-1.pdf>
+Package pdftex.def Info: paper_files/figure-latex/graph3-1.pdf  used on input line 420.
+(pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
+[5 <./paper_files/figure-latex/graph2-1.pdf>]
+<paper_files/figure-latex/graph4-1.pdf, id=123, 578.16pt x 289.08pt>
+File: paper_files/figure-latex/graph4-1.pdf Graphic file (type pdf)
+<use paper_files/figure-latex/graph4-1.pdf>
+Package pdftex.def Info: paper_files/figure-latex/graph4-1.pdf  used on input line 440.
+(pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
+[6 <./paper_files/figure-latex/graph3-1.pdf>] [7 <./paper_files/figure-latex/graph4-1.pdf>] [8] [9] [10] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: CE4489DF0B631CD42E964D9480CC60E0;1254.
+(rerunfilecheck)             Checksum: F2568F2D2602B349234B6DDC4683D406;1428.
  ) 
 Here is how much of TeX's memory you used:
- 11271 strings out of 480198
- 176542 string characters out of 5891664
- 469457 words of memory out of 5000000
- 29020 multiletter control sequences out of 15000+600000
+ 11298 strings out of 480198
+ 177288 string characters out of 5891664
+ 469719 words of memory out of 5000000
+ 29037 multiletter control sequences out of 15000+600000
  536240 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,8n,63p,484b,393s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (8 pages, 300108 bytes).
+{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on paper.pdf (10 pages, 358267 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

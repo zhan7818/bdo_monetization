@@ -30,6 +30,7 @@ cleaned_data <- clean_names(raw_data[-c(45,49,52,131),])
 #### New Variable Creation ####
 # use mutate() to create an age group column
 cleaned_data <- cleaned_data |>
+  mutate(age = as.numeric(age)) |>
   mutate(age_group = cut(age, c(12,22,32,42,52,62,101),
                          labels = c("13-22","23-32","33-42","43-52","53-62","63+")))
 
@@ -38,9 +39,10 @@ cleaned_data <- cleaned_data |>
 # appropriate
 cleaned_data <- cleaned_data |>
   mutate(age = as.numeric(age)) |>
+  mutate(age_group = as.ordered(age_group)) |>
   mutate(gender = as.factor(gender)) |>
-  mutate(character_total = as.factor(character_total)) |>
-  mutate(character_female = as.factor(character_female)) |>
+  mutate(character_total = as.ordered(character_total)) |>
+  mutate(character_female = as.ordered(character_female)) |>
   mutate(playtime_total = as.numeric(playtime_total)) |>
   mutate(playtime_main = as.numeric(playtime_main)) |>
   mutate(gender_main = as.factor(gender_main)) |>
@@ -56,6 +58,15 @@ cleaned_data <- cleaned_data |>
   mutate(ps_cosmetic_usd = as.numeric(ps_cosmetic_usd)) |>
   mutate(ps_functional_usd = as.numeric(ps_functional_usd)) |>
   mutate(ps_total = as.numeric(ps_total))
+
+# Organize the factor levels of character_female and character_total
+cleaned_data <- cleaned_data |>
+  mutate(character_female = ordered(character_female,
+                                    levels = c("0","1","2","3","4","5","6",
+                                               "7","8","9","10","10+"))) |>
+  mutate(character_total = ordered(character_total,
+                                    levels = c("0","1","2","3","4","5","6",
+                                               "7","8","9","10","10+")))
 
 # Create test agent
 agent <-

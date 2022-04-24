@@ -11,7 +11,7 @@ toc: FALSE
 bibliography: references.bib
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 # Load required packages and read in the data
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -19,8 +19,24 @@ library(tidyverse)
 library(knitr) # for kable()
 library(ggplot2) # for graphs
 
+# Variables of class factor must be mutated as such again
 cleaned_data <-
-  read_csv(here::here("outputs/data/cleaned_data.csv"))
+  read_csv(here::here("outputs/data/cleaned_data.csv")) |>
+  mutate(age_group = as.ordered(age_group)) |>
+  mutate(gender = as.factor(gender)) |>
+  mutate(character_total = as.ordered(character_total)) |>
+  mutate(character_female = as.ordered(character_female)) |>
+  mutate(gender_main = as.factor(gender_main)) |>
+  mutate(package_free = as.factor(package_free))
+
+# Organize the factor levels of character_female and character_total
+cleaned_data <- cleaned_data |>
+  mutate(character_female = ordered(character_female,
+                                    levels = c("0","1","2","3","4","5","6",
+                                               "7","8","9","10","10+"))) |>
+  mutate(character_total = ordered(character_total,
+                                    levels = c("0","1","2","3","4","5","6",
+                                               "7","8","9","10","10+")))
 ```
 
 # Introduction
@@ -291,14 +307,16 @@ central market.
 Figure \@ref(fig:graph1) showcases this issue: For respondents who claimed
 that having a VP active is crucial to their enjoyment of the game, only a few
 reported having consistent success purchasing VPs from the central market.
+Because of this, respondents could be pressured into relying more 
+on purchasing VPs through the pearl shop.
 
 ```{r graph2, fig.cap="Rated Importance of Value Pack Versus Number of Value Packs Purchased on Central Market",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
 # Create a graph that showcases the importance of VP vs. number of VP bought
 #   from the central market
-# Row 6, 24 and 112 seem to be an outliers; no dicernable reason for someone to purchase
+# Row 6, 24 and 112 seem to be outliers; no discernible reason for someone to purchase
 #   enough VPs for more than number of days the game has been released for.
-#   Possible input error from the respondent. Regardless, removed for a more
-#   visually clear graph
+#   Possible input error from the respondent. Regardless, removed for a
+#   visually clearer graph
 cleaned_data[-c(6,24,112),] |>
   ggplot(aes(x = importance_vp, y = cm_vp_count)) +
   geom_point(size = 1.75, alpha = 0.1, color="red") +
@@ -308,17 +326,90 @@ cleaned_data[-c(6,24,112),] |>
 
 ```
 
+This line of thinking is echoed by the observations in Table \@ref(fig:graph3),
+where the vast majority of respondents report spending a considerable amount
+of real world currencies on purchasing VPs through the pearl shop.
+For reference, a 30-day value pack in the pearl shop costs 1500 pearls
+(the equivalent of $15.00 USD).
+
+```{r graph3, fig.cap="Spending on VPs in Pearl Shop Versus Number of VPs Purchased on Central Market", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# Row 60 is potential outlier; may have purchased lots of VPs in order to sell
+#   them on the central market for silver
+cleaned_data[-c(6,24,60,112),] |>
+  ggplot(aes(x = ps_vp_usd, y = cm_vp_count)) +
+  geom_point(size = 1.75, alpha = 0.1, color="red") +
+  theme_minimal() +
+  labs(x = "Spending on Value Pack in Pearl Shop (USD)",
+       y = "Number of VPs Purchased on Central Market")
+```
+
+### Gender of Characters
+
+Gender-based appeal is a deep-rooted design pattern in most Korean MMOs.
+(`FIND SOME SOURCE FOR THIS SHIT`)
+Most cosmetic options are designed to appeal to the general playerbase and often
+forfeits any semblance of practicality. This issue is very apparent in female
+armor designs in Korean MMOs, and Black Desert Online is generally not an
+exception to this. To see if these appeal-based design decisions truly have
+any merit behind them, data was collected on the number of adult
+female characters that each respondent has. The intent is to compare it with
+their spending in cosmetic items, as briefly demonstrated in
+Figure \@ref(fig:graph4).
+
+```{r graph4, fig.cap="Number of female characters Versus Total Spending", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# Create a scatterplot on number of female characters versus total spending
+cleaned_data |>
+  ggplot(aes(x = character_female, y = ps_cosmetic_usd)) +
+  geom_point(size = 1.75, alpha = 0.1, color="red") +
+  theme_minimal() +
+  labs(x = "Spending on Value Pack in Pearl Shop (USD)",
+       y = "Number of VPs Purchased on Central Market")
+```
+
+\newpage
+
 # Model
 
-TODO
+\begin{equation}
+Y_i = \beta_0 + \beta_1 X_i + \beta_2 X_i (\#eq:linm)
+\end{equation}
+
+The general assumption behind the consideration of this model is that
+as a player spends more time in BDO, the more likely they are to spend more
+real world currencies in exchange for in-game items. This could be due to their
+need to continue using subscription-esque items that grant them boosts, or
+due to the creation of more content in the game that requires real world
+currencies to purchase (such as cosmetic items). Given the context of 
+gender-based appeal in Korean MMOs such as BDO, there could also be a connection
+between number of female characters and a player's spending in the pearl shop.
+The null hypothesis of this model therefore seeks to explore whether there 
+really is a statistically significant connection between the total amount
+of money spent in-game and the factors mentioned above. 
+Equivalently,
+
+\begin{equation}
+H_0: \beta_1, \beta_2 \neq 0
+\end{equation}
+
+Equation \@ref(eq:linm) represents the model used in this paper, where
+$Y_i$, the dependent variable, is a player's total spending in pearl shop,
+$\beta_0$ is the intercept, $\beta_1$ is the covariate of total playtime,
+$\beta_2$ is the covariate of number of female characters the player has.
+
+Since the dependent variable is continuous, a linear model is considered instead
+of a logistic model. For the analysis in the rest of this section, the dataset
+is split 80%/20% for training/testing purposes. The statistical programming 
+language `R` [@citeR] is used to run this model and present the findings from
+it.
 
 # Results
 
-TODO
+TODO; Concrete findings accompanied by graphs
 
 # Discussion
 
-TODO
+TODO; speculations as to why we saw a particular trend, its implications.
+Limitations. Further Directions.
 
 \newpage
 
