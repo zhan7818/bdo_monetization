@@ -17,7 +17,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 library(knitr) # for kable()
+library(kableExtra)
 library(ggplot2) # for graphs
+library(modelsummary)
+library(cowplot) # for side by side plots
 
 # Variables of class factor must be mutated as such again
 cleaned_data <-
@@ -96,6 +99,10 @@ between variables in the dataset, the results and implications of which will
 be covered in Section \@ref(results). Any limitations or possible extensions 
 of this paper will be discussed in Section \@ref(discussion).
 
+All tables and graphs presented in this paper are produced using the 
+statistical programming language `R` [@citeR]. The `knitr` [@citeknitr] and
+`kableExtra` [@citeKableE] packages are used for tables, and the `ggplot`
+[@citeggplot2] package is used for graphs.
 
 TODO: add in some references that support claims about general transition from 
 singleplayer to multiplayer in video game industry.
@@ -223,7 +230,15 @@ only purchasable through the pearl shop.
 ## Preliminary Analysis
 
 Table \@ref(tab:table1) showcases a summary of the average spending of the
-respondents, categorized into age groups and gender, in USD. Already, we observe
+respondents, categorized into age groups, gender, and whether the respondent
+obtained the free package for the game, in USD. Pearl Abyss, the developer and
+publisher of BDO, frequently employs events and/or utilize collaborations
+with other companies (e.g., twitch prime, anniversary event, etc)
+to hand out free packages for the game, which simply
+allows a player access to the game but grants no other benefits or items
+(Other package tiers grant players various items and benefits).
+
+Already, we observe
 that there is a noticeably higher average for spending in the pearl shop 
 compared to upfront package purchases.
 Note that this difference could be potentially misleading; The large majority
@@ -237,7 +252,7 @@ further elaborated upon in Section \@ref(discussion).
 # Due to insufficient response counts,
 #   remove the "other" gender group for this summary table
 summary_tbl <- cleaned_data[-c(47,70,85,103,135),] |>
-  group_by(age_group, gender) |>
+  group_by(age_group, gender, package_free) |>
   summarise(ps_mean = mean(ps_total),
             packages_mean = mean(packages_usd),
             playtime_mean = mean(playtime_total))
@@ -249,16 +264,15 @@ summary_tbl |>
       Categories in Black Desert Online",
     col.names = c("Age Group",
                   "Gender",
-                  "Avg PS Spending (USD)",
-                  "Avg Package Spending (USD)",
+                  "Has Free Package",
+                  "Pearl Shop",
+                  "Game Packages",
                   "Avg Playtime (hrs)"),
     digits = 1,
     booktabs = TRUE,
     linesep = ""
-  )
-
-```
-```{r}
+  ) |>
+  add_header_above(c(" " = 3, "Average Spending (USD)" = 2, " " = 1))
 
 ```
 
@@ -280,6 +294,24 @@ cleaned_data |>
   geom_histogram(bins = 100) +
   theme_minimal() +
   labs(x = 'Total Spending in Pearl Shop in USD')
+```
+
+Figure \@ref(fig:graph9) plots the rated importance of VP, and BK and OM.
+We can observe that there is a considerable number of respondents who consider
+VP as extremely critical to their enjoyment of the game. At the same time,
+we can see a large number of
+respondents consider BK and OM largely unimportant to their enjoyment of the
+game. This shows that subscription-esque items are not universally regarded
+as equally valuable by the respondents.
+
+```{r graph9, fig.cap="Rated Importance of Value Pack, and Blessing of Kamasylve and Secret Book of Old Moon",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+
+cleaned_data |>
+  ggplot() +
+  geom_histogram(aes(x = importance_vp, fill = "VP"), bins = 10, alpha = 0.4) +
+  geom_histogram(aes(x = importance_bkom, fill = "BK and OM"), bins = 10, alpha = 0.4) +
+  guides(fill=guide_legend(title="Subscription Type", )) +
+  labs(x = "Rated Importance of Subscription Items")
 ```
 
 ### Supply and Demand
@@ -343,35 +375,71 @@ cleaned_data[-c(6,24,60,112),] |>
        y = "Number of VPs Purchased on Central Market")
 ```
 
-### Gender of Characters
+### Gender of players and Characters
 
 Gender-based appeal is a deep-rooted design pattern in most Korean MMOs.
 (`FIND SOME SOURCE FOR THIS SHIT`)
 Most cosmetic options are designed to appeal to the general playerbase and often
 forfeits any semblance of practicality. This issue is very apparent in female
 armor designs in Korean MMOs, and Black Desert Online is generally not an
-exception to this. To see if these appeal-based design decisions truly have
+exception to this. 
+There are 13 adult female characters in BDO and 9 adult male characters.
+To see if these appeal-based design decisions truly have
 any merit behind them, data was collected on the number of adult
 female characters that each respondent has. The intent is to compare it with
 their spending in cosmetic items, as briefly demonstrated in
 Figure \@ref(fig:graph4).
 
-```{r graph4, fig.cap="Number of female characters Versus Total Spending", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+```{r graph4, fig.cap="Number of Female Characters Versus Total Spending", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
 # Create a scatterplot on number of female characters versus total spending
 cleaned_data |>
   ggplot(aes(x = character_female, y = ps_cosmetic_usd)) +
   geom_point(size = 1.75, alpha = 0.1, color="red") +
   theme_minimal() +
-  labs(x = "Spending on Value Pack in Pearl Shop (USD)",
-       y = "Number of VPs Purchased on Central Market")
+  labs(x = "Number of Adult Female Characters the Respondent has",
+       y = "Spending on Cosmetic Items in Pearl Shop (USD)")
+```
+
+It can be observed in Figure \@ref(fig:graph5) that there are more respondents
+whose main character in BDO is female than male at all age groups. 
+This statistic may not
+be surprising, given that male respondents similarly dominate all age groups,
+as shown in Figure \@ref(fig:graph6). Nevertheless, this may grant some insight
+into the targeted audience of Black Desert Online.
+
+```{r graph5, fig.cap="Gender of Main Character Across Age Groups", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+
+cleaned_data |>
+  ggplot() +
+  geom_bar(aes(x = age_group, fill = gender_main), position = 'dodge') +
+  labs(x = "Age Group", y = "Count")
+```
+
+```{r graph6, fig.cap="Gender of Respondent Across Age Groups", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+
+cleaned_data |>
+  ggplot() +
+  geom_bar(aes(x = age_group, fill = gender), position = 'dodge') +
+  labs(x = "Age Group", y = "Count")
 ```
 
 \newpage
 
 # Model
 
+Since the dependent variable is continuous, a linear model is considered instead
+of a logistic model.
+We will be considering both the player's rated importance of VP and BKOM,
+the number of female characters they have, and their
+total playtime as explanatory variables as part of a multiple linear regression
+model.
+For the analysis in the rest of this section, the dataset
+is split 80%/20% for training/testing purposes. The statistical programming 
+language `R` [@citeR] is used to run this model and present the findings from
+it.
+
 \begin{equation}
-Y_i = \beta_0 + \beta_1 X_i + \beta_2 X_i (\#eq:linm)
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 X_4 (\#eq:linm)
 \end{equation}
 
 The general assumption behind the consideration of this model is that
@@ -382,31 +450,288 @@ due to the creation of more content in the game that requires real world
 currencies to purchase (such as cosmetic items). Given the context of 
 gender-based appeal in Korean MMOs such as BDO, there could also be a connection
 between number of female characters and a player's spending in the pearl shop.
-The null hypothesis of this model therefore seeks to explore whether there 
+The model therefore seeks to explore whether there 
 really is a statistically significant connection between the total amount
 of money spent in-game and the factors mentioned above. 
 Equivalently,
 
 \begin{equation}
-H_0: \beta_1, \beta_2 \neq 0
+H_0: \beta_1 = \beta_2 = \beta_3 = \beta_4 = 0
 \end{equation}
 
 Equation \@ref(eq:linm) represents the model used in this paper, where
-$Y_i$, the dependent variable, is a player's total spending in pearl shop,
-$\beta_0$ is the intercept, $\beta_1$ is the covariate of total playtime,
-$\beta_2$ is the covariate of number of female characters the player has.
+$Y$, the dependent variable, is a player's total spending in pearl shop,
+$\beta_0$ is the intercept, $X_1$ is the covariate of total playtime,
+$X_2$ is the covariate of number of female characters the player has.
+$X_3$ is the covariate of the player's rated importance of VP.
+$X_4$ is the covariate of the player's rated importance of BK and OM.
+$\beta_1 \beta_2, \beta_3, \beta_4$ are the coefficients of the variables.
 
-Since the dependent variable is continuous, a linear model is considered instead
-of a logistic model. For the analysis in the rest of this section, the dataset
-is split 80%/20% for training/testing purposes. The statistical programming 
-language `R` [@citeR] is used to run this model and present the findings from
-it.
+```{r model, fig.cap="Model Diagnostic Plots", echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=7}
+# Split data into training and testing set
+set.seed(6607)
+train_samp <- sample(seq_len(nrow(cleaned_data)),
+                     size = floor(0.8 * nrow(cleaned_data)))
+
+train <- cleaned_data[train_samp,]
+test <- cleaned_data[-train_samp,]
+
+# Run linear model
+# treat character_female as a numeric vector
+train <- train |>
+  mutate(character_female = (as.numeric(character_female)-1))
+test <- test |>
+  mutate(character_female = (as.numeric(character_female)-1))
+
+lin_model <- lm(ps_total ~ importance_vp + importance_bkom
+                + character_female + playtime_total,
+                data = train)
+
+# Run diagnostics
+par(mfrow = c(2, 2))
+plot(lin_model)
+
+# Run another linear model
+lin_model2 <- lm(ps_total ~ importance_vp + importance_bkom
+                 + character_female + playtime_total,
+                data = train[-c(91,62,19),])
+
+lm_sum <- summary(lin_model2)
+
+# Check predictions on testing dataset
+linpred <- predict(lin_model2, test, type="response", se.fit = TRUE)
+# Check mean squared error
+mse <- mean((linpred$fit - test$ps_total)^2)
+```
+
+The diagnostic plots of the model are shown in Figure \@ref(fig:model).
+The fitted values vs. residuals graph (top-left) shows a roughly horizontal line without
+noticeable patterns, which indicated a linear relationship between the dependent
+and independent variable.
+
+The Normal Q-Q plot (top-right) shows most points falling on the dashed line,
+though there are also a considerable number of points that fall off the dashed line
+on the right tail end, suggesting that the residuals may not be entirely normally
+distributed.
+
+The Scale-Location plot (bottom-left) shows a red line that is not
+horizontal, meaning that the variance of the residual
+varies as the fitted value changes
+This suggests that there may be a violation of
+the homoscedasticity assumption which assumes that variance of
+residuals is the same for all X values.
+An alternative model with square-root transformation
+of the dependent variable was attempted, but heteroscedasticity remained.
+
+Note that points 91, 62 and 19 are all marked as possible outliers in the
+three plots mentioned above, suggesting that their inclusion impacts the
+linear model greatly. As such, they were removed in the final model.
+The diagnostic conclusions remained similar to the ones above after the removal
+of the said points.
+
+The residuals vs. leverage plot (bottom-right) identifies two outliers that
+greatly exceed the Cook's distance--points 91 and 62--and
+one influence point at point 113 The removal of point 66 did not greatly affect
+the overall trend shown by the red line in the same plot, thus it was kept in
+the final model.
+
+The model is used to predict pearl shop spending using the test dataset and
+arrives at a mean squared error value of `967085.46`. This large MSE may be
+due to outliers similar to the ones removed during the model diagnostics
+section.
 
 # Results
 
-TODO; Concrete findings accompanied by graphs
+## Model Summary
+
+A summary plot shown in Table \@ref(tab:table2) is generated using the
+`modelsummary` package [@citeModelSum] in `R` [@citeR].
+Model 1 is the model including the outliers and Model 2 is the final model.
+
+```{r table2, echo=FALSE, warning=FALSE, message=FALSE}
+# Create model summary table
+modelsummary(list(lin_model, 
+                  lin_model2),
+             fmt = 2,
+             title = "Model Summary of Pearl Shop Spending Based on Rated
+             Importance of VP, BK and OM, Number of Female Characters, and
+             Total Playtime",
+             output = 'markdown')
+```
+
+The coefficient estimates shown in Table \@ref(tab:table2) for the final model
+is equivalent to the following, shown in Equation \@ref(eq:fitted):
+
+\begin{equation}
+\hat{Y_i} = -785.22 + 0.06 X_{1i} + 58.62 X_{2i} + 91.71 X_{3i}
+  + 69.28 X_{4i}  (\#eq:fitted)
+\end{equation}
+
+Summary of the model shows that only the rated importance of Value Pack and 
+the total playtime were statistically significant predictors
+at $\alpha=0.01$ significance level. The rated importance of Blessing of
+Kamasylve and Secret Book of Old Moon, and the number of female characters were
+not statistically significant predictors.
+
+## Character Gender Inequality
+
+As alluded to in Section \@ref(gender-of-players-and-characters), gender-based
+aesthetics are a major selling point of Korean MMOs such as BDO.
+Figure \@ref(fig:graph7) plots the respondents' total spending in the pearl shop
+against the proportion of the said spending contributed to cosmetic items.
+The graph shows that on average, a player with a female main
+character spends a higher proportion of their pearls on cosmetic items.
+Specifically, on average, players with a female main character spends roughly an
+additional 9.23% percent of their total pearl shop spending when compared to
+players with a male main character.
+This implies that for games focused on adding more cosmetic content to their
+in-game cash shop, these cosmetics attract more customers if they were created
+for female playable characters.
+
+```{r graph7, fig.cap="Cosmetic Spending Versus Functional Spending in Pearl Shop", echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+
+# Create new column that shows proportion of total pearl shop spending on
+#   cosmetic items
+# Exlucde point 193 as outlier for visually clearer graph
+cleaned_data <- cleaned_data |>
+  mutate(cos_prop = ps_cosmetic_usd / ps_total)
+
+cleaned_data |>
+  ggplot(aes(x=ps_total, y=cos_prop, color=gender_main)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Total Spending in Pearl Shop (USD)", y = "Proportion of Total
+       Spending on Cosmetics")
+
+# Check difference in average cosmetic item proportion
+diff.avg.cos.prop <- 
+  mean(cleaned_data[cleaned_data$gender_main=="Female"&cleaned_data$ps_total!=0,]$cos_prop) -
+  mean(cleaned_data[cleaned_data$gender_main=="Male"&cleaned_data$ps_total!=0,]$cos_prop)
+```
+
+## Free Game Package
+
+As shown in Table \@ref(tab:table1), some of the respondents had obtained the
+free package for the game, which were frequently given out through various
+methods by the developer and publisher of BDO, as described in Section
+\@ref(preliminary-analysis). Out of the 67 respondents
+who obtained the free package of the game, 23 of them remained completely
+free-to-play and did not spend any real world currency to purchase in-game
+items nor other game packages.
+The other 44 respondents--almost double those who remained completely
+free-to-play--either purchased in-game items on the pearl shop or other game
+packages.
+
+This is further elaborated upon in Table \@ref(tab:table3), which summarises
+the dataset based on whether the respondent's spending status is considered
+`completely free` if they obtained the free package for the game and did not
+spent money on other game packages nor in the pearl shop, and `partially free`
+if they obtained the free package for the game but spent money on other
+game packges and/or in the pearl shop.
+We can see from Table \@ref(tab:table3) that despite having a lower average
+spending in both the pearl shop and game packages, the "partially free" players
+still spent a substantial amount of money on further purchases for the game:
+On average, for "partially free" respondents,
+the amount of money spent on game package purchases accounts for only 6% of
+their total spending on BDO. We observe a similar statistic for players who
+did not obtain a free package for the game, whose spending on game packages
+accounts for only 5% of their total spending on BDO.
+
+```{r table3, echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# create column to mark completely free-to-play respondents
+cleaned_data <- cleaned_data |>
+  mutate(comp_free = 
+           ifelse((package_free==1 & ps_total==0 & packages_usd==0),"yes","no"))
+
+# create column to mark respondents who got the game for free but still 
+#   paid for in-game items
+cleaned_data <- cleaned_data |>
+  mutate(part_free = 
+           ifelse((package_free==1 & (ps_total!=0 | packages_usd!=0)),"yes","no"))
+
+summary_tbl2 <- cleaned_data |>
+  group_by(comp_free, part_free) |>
+  summarise(ps_mean = mean(ps_total),
+            packages_mean = mean(packages_usd),
+            pack_ps_percent = mean(packages_usd)/(mean(ps_total)+mean(packages_usd)),
+            vp_ps_percent = mean(ps_vp_usd)/(mean(ps_total)+mean(packages_usd)),
+            bkom_ps_percent = mean(ps_bkom_usd)/(mean(ps_total)+mean(packages_usd)))
+
+# Use kable to create the table
+summary_tbl2 |>
+  kable(
+    caption = "Summary of Average Playtime and Spending in Upfront and Cash Shop
+      Categories in Black Desert Online Based On Free Package Acquisition",
+    col.names = c("Completely Free",
+                  "Partially Free",
+                  "Pearl Shop",
+                  "Packages",
+                  "Packages",
+                  "VP",
+                  "BKOM"),
+    digits = 2,
+    booktabs = TRUE,
+    linesep = ""
+  ) |>
+  add_header_above(c("Spending Status" = 2,
+                     "Average Spending (USD)" = 2,
+                     "Average Proportion of Total Spending" = 3))
+```
+
+## Subscription Items
+
+As discussed in \@ref(preliminary-analysis), Figure \@ref(fig:graph9) suggests
+a difference in importance as regarded by the respondents. This is supported
+by the statistics shown in Figure \@ref(fig:graph8), which show a stronger
+positive linear correlation between rated importance of VP and spending on
+VP when compared to the correlation between rated importance of BK and OM and
+spending on BK and OM. On average, respondents spend $148.0288 USD on
+purchasing VP from the pearl shop, and spend $49.1202 USD on purchasing
+BK and OM from the pearl shop.
+
+Table \@ref(tab:table3) shows that on average, VP accounts for 11% of
+a respondent's total spending on BDO (15% for partially free respondents).
+BK and OM accounts for 4% of a respondent's total spending on BDO (5% for
+partially free respondents).
+
+```{r graph8, fig.cap="Rated Importance of Subscription Items Versus Spending on the Said Items",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
+# Create scatterplot for rated importance of VP vs. USD spent on VP
+# Remove row 60 for a visually clearer graph
+plot1 <- cleaned_data[-60,] |>
+  ggplot(aes(x = importance_vp, y = ps_vp_usd)) +
+  geom_point(size = 1.75, alpha = 0.1, color="red") +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(x = "Importance of VP",
+       y = "Spending on VP in Pearl Shop (USD)")
+
+# Create scatterplot for rated importance of VP vs. USD spent on VP
+plot2 <- cleaned_data |>
+  ggplot(aes(x = importance_vp, y = ps_vp_usd)) +
+  geom_point(size = 1.75, alpha = 0.1, color="red") +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(x = "Importance of BK and OM",
+       y = "Spending on BK and OM in Pearl Shop (USD)")
+
+plot_grid(plot1, plot2)
+
+mean_vp <- mean(cleaned_data$ps_vp_usd)
+mean_bkom <- mean(cleaned_data$ps_bkom_usd)
+```
+
+\newpage
 
 # Discussion
+
+## Free Game Versus Upfront Cost
+
+The statistics presented in Table \@ref(tab:table3) suggests that
+the amount of revenue obtained from game package purchases is relatively
+minuscule compared to other sources of income. Therefore, publishers of
+MMORPGs should forgo charging an upfront fee for their games in order to draw
+in more players so that they can browse the much more profitable in-game cash
+shop instead.
 
 TODO; speculations as to why we saw a particular trend, its implications.
 Limitations. Further Directions.
