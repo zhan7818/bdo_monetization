@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.25)  25 APR 2022 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.25)  27 APR 2022 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,12 +574,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: Reference `tab:graph1' on page 4 undefined on input line 398.
 
-<paper_files/figure-latex/graph1-1.pdf, id=108, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph1-1.pdf, id=120, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph1-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph1-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph1-1.pdf  used on input line 408.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
-<paper_files/figure-latex/graph9-1.pdf, id=110, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph9-1.pdf, id=122, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph9-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph9-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph9-1.pdf  used on input line 422.
@@ -600,12 +600,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.438 
        <./paper_files/figure-latex/graph1-1.pdf> <./paper_files/figure-latex/graph9-1.pdf>]
-<paper_files/figure-latex/graph2-1.pdf, id=139, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph2-1.pdf, id=151, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph2-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph2-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph2-1.pdf  used on input line 457.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
-<paper_files/figure-latex/graph3-1.pdf, id=141, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph3-1.pdf, id=153, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph3-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph3-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph3-1.pdf  used on input line 469.
@@ -616,17 +616,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.488 
        <./paper_files/figure-latex/graph2-1.pdf>]
-<paper_files/figure-latex/graph4-1.pdf, id=159, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph4-1.pdf, id=171, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph4-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph4-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph4-1.pdf  used on input line 491.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
-<paper_files/figure-latex/graph5-1.pdf, id=162, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph5-1.pdf, id=174, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph5-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph5-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph5-1.pdf  used on input line 504.
 (pdftex.def)             Requested size: 469.75385pt x 234.8769pt.
-<paper_files/figure-latex/graph6-1.pdf, id=163, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph6-1.pdf, id=175, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph6-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph6-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph6-1.pdf  used on input line 510.
@@ -647,7 +647,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
                                                   \__shipout_drop_firstpage_...
 l.514 \newpage
                <./paper_files/figure-latex/graph4-1.pdf> <./paper_files/figure-latex/graph5-1.pdf>]
-<paper_files/figure-latex/model-1.pdf, id=198, 650.43pt x 505.89pt>
+<paper_files/figure-latex/model-1.pdf, id=210, 650.43pt x 505.89pt>
 File: paper_files/figure-latex/model-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/model-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/model-1.pdf  used on input line 561.
@@ -663,7 +663,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has
                                                   \__shipout_drop_firstpage_...
 l.574 
        <./paper_files/figure-latex/model-1.pdf>] [11]
-<paper_files/figure-latex/graph7-1.pdf, id=238, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph7-1.pdf, id=250, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph7-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph7-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph7-1.pdf  used on input line 676.
@@ -674,7 +674,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has
                                                   \__shipout_drop_firstpage_...
 l.708 
        <./paper_files/figure-latex/graph7-1.pdf>]
-<paper_files/figure-latex/graph8-1.pdf, id=261, 578.16pt x 289.08pt>
+<paper_files/figure-latex/graph8-1.pdf, id=273, 578.16pt x 289.08pt>
 File: paper_files/figure-latex/graph8-1.pdf Graphic file (type pdf)
 <use paper_files/figure-latex/graph8-1.pdf>
 Package pdftex.def Info: paper_files/figure-latex/graph8-1.pdf  used on input line 746.
@@ -688,27 +688,32 @@ l.750 \newpage
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.768 \newpage
-               <./paper_files/figure-latex/graph8-1.pdf>] [15] [16] (./paper.aux)
+l.804 
+       <./paper_files/figure-latex/graph8-1.pdf>] [15
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.881 
+      ] [16] [17] [18] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: E4681B339EA455E63CE30E6ABA243E84;2334.
+(rerunfilecheck)             Checksum: 42CA436C72D6DE8ECBA93C3970142E41;2742.
  ) 
 Here is how much of TeX's memory you used:
- 12894 strings out of 480193
- 205500 string characters out of 5891561
- 501467 words of memory out of 5000000
- 30547 multiletter control sequences out of 15000+600000
+ 12912 strings out of 480193
+ 205746 string characters out of 5891561
+ 501695 words of memory out of 5000000
+ 30554 multiletter control sequences out of 15000+600000
  536346 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,9n,63p,484b,381s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/psymi/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (16 pages, 467576 bytes).
+Output written on paper.pdf (18 pages, 478388 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
