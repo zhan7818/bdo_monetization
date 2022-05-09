@@ -4,7 +4,7 @@ author:
   - Tian Yi Zhang
 thanks: "Code and data are available at: https://github.com/zhan7818/bdo_monetization"
 date: "`r format(Sys.time(), '%d %B %Y')`"
-abstract: "Advertisement and monetization schemes are essential to obtaining a stable revenue stream and ensuring the continued surival of an online video game. We obtain data through a survey distributed in several online communities for the massively multiplayer online game known as Black Desert Online and analyze it throuhg several graphs, tables, and a model in this paper. Results show a positive correlation between players' total playtimes, rated importance of subscription items, and their total monetary spending in the in-game cash shop. Players with a female main character in the game spend on average 9.23% more real world currency on cosmetic items in-game. On average, upfront cost for the game accounts for only 5-6% of a player's total spending on the game. These findings suggest that MMORPGs should release with an upfront cost before transitioning to free-to-play later down the line. The introduction of more than one type of subscription items becomes marginally less profitable. Further analysis on the topic of whales is recommended. Keywords: VP, BK, OM, Whale, MMORPG, Subscription, Pearl Shop, Central Market, Black Desert Online, Gender, Microtransaction"
+abstract: "Advertisement and monetization schemes are essential to obtaining a stable revenue stream and ensuring the continued surival of an online video game. We obtain data through a survey distributed in several online communities for the massively multiplayer online game known as Black Desert Online developed by Pearl Abyss and analyze it through several graphs, tables, and a model in this paper. Results show a positive correlation between a player's total playtime, rated importance of subscription items, and their total monetary spending in the in-game cash shop. Players with a female main character in the game spend on average 9.23% more real world currency on cosmetic items in-game. On average, upfront cost for the game accounts for only 5-6% of a player's total spending on the game. These findings suggest that MMORPGs should release with an upfront cost before transitioning to free-to-play later down the line. The introduction of more than one type of subscription items becomes marginally less profitable. Further analysis on the topic of whales is recommended. Keywords: VP, BK, OM, Whale, MMORPG, Subscription, Pearl Shop, Central Market, Black Desert Online, Pearl Abyss, Gender, Microtransaction"
 output:
   bookdown::pdf_document2
 toc: TRUE
@@ -51,8 +51,8 @@ fully developed. More importantly, what this also meant was a lack of
 post-launch updates being delivered for a game, as developers also lacked means
 to deliver constant updates effectively into the hands of the consumers. As a
 result, most video games received little to no post-launch updates aside from
-one or two major expansions to their games that contained sufficient content
-to be put on the shelves as add-ons to the original purchase.
+one or two major expansions that contained sufficient content
+to be put on the shelves as add-ons to the original product.
 Despite this, consumers back then were generally content with the amount of 
 content they received for their purchases.
 
@@ -70,7 +70,8 @@ consumers a simple upfront fee; live service video games must find an effective
 and profitable monetization scheme in order to fund their continued development.
 
 The most prominent examples of live service online video games are the massively
-multiplayer online role-playing games (MMORPG), a genre of video games known
+multiplayer online role-playing games, henceforth referred to as
+MMORPG, a genre of video games known
 specifically for its focus on multiplayer. Due to their focus on 
 progression-based gameplay, developers of MMORPGs must constantly create new
 and refreshing content to add to their games. To subsidize the development
@@ -86,10 +87,11 @@ on the monetization schemes of MMORPGs could have meaningful
 implications for future MMORPG developers on how they should monetize their
 video games to maximize revenue.
 
-This paper primarily focuses on the MMORPG known as Black Desert Online,
-commonly and henceforth referred to as BDO.
-as it is MMORPG that utilizes a of mix of upfront cost, subscription and in-game
-cash shop. Pearl Abyss, the developers behind Black Desert Online, 
+This paper primarily focuses on the MMORPG known as `Black Desert Online`,
+commonly and henceforth referred to as BDO,
+as it is an MMORPG that utilizes a of mix of upfront cost
+, subscription and in-game
+cash shop. `Pearl Abyss`, the developers behind Black Desert Online, 
 never published any official statistics that touch upon the revenue of
 Black Desert Online. As such, the following analysis will rely on data 
 collected by the author of this paper.
@@ -112,6 +114,7 @@ statistical programming language `R` [@citeR]. The `knitr` [@citeknitr] and
 
 Due to the lack of APIs provided by Pearl Abyss that concerns the subject of
 this paper, convenience sampling is used to collect data from the general
+North American and European
 playerbase for the game. The survey is created in Google Forms and is
 distributed to Black Desert Online players on Steam discussion, Black Desert
 Online forum board, and the Black Desert Online subreddit on Reddit.^[A PDF
@@ -137,13 +140,14 @@ above, efforts were made to be
 as transparent as possible with the participants: respondents were 
 informed of the intended usage for the data collected and were assured that
 no information that can be used to identify them will be collected nor
-included in the survey and final paper.
+included in the survey and the final paper.
 
 ## Dataset Cleaning and Description
 
 A total of 212 responses were collected from the survey. The data was exported
-to excel [@citeExcel] where the columns names were shortened to be readable.
+to Excel [@citeExcel] where the columns names were shortened to be readable.
 Two new columns were created from the responses:
+
 * packages_usd: amount in USD spent on purchasing game packages
 * packages_free: binary indicator of whether the respondent received the game
 for free
@@ -196,8 +200,8 @@ primary character and spend considerably more time on that character than their
 other characters. As such, playtime for the main character and total playtime
 were survyed separetely.
 
-There are two methods to purchase premium items in this game: through the
-`central market` or through the `pearl shop`. Pearl shop is BDO's cash shop,
+There are two methods to purchase premium items in this game, through the
+`central market` or through the `pearl shop`: The pearl shop is BDO's cash shop,
 accessible to every player, where players could use `pearls`, a currency
 converted from real world currencies, to purchase premium items for cosmetic
 and functional purposes. Furthermore, players who purchased premium items in
@@ -301,7 +305,7 @@ cleaned_data |>
 Figure \@ref(fig:graph9) plots the rated importance of VP, and BK and OM.
 We can observe that there is a considerable number of respondents who consider
 VP as extremely critical to their enjoyment of the game. At the same time,
-we can see a large number of
+we can see that a large number of
 respondents consider BK and OM largely unimportant to their enjoyment of the
 game. This shows that subscription-esque items are not universally regarded
 as equally valuable by the respondents.
@@ -320,7 +324,7 @@ cleaned_data |>
 
 An important aspect of the central market in BDO is the issue of supply and demand:
 Despite being able to list most cosmetic items onto the central market,
-there is generally always more demand for these cosmetic items than the supply.
+there is generally always more demand for these cosmetic items than supply.
 To combat the issue of price inflation, most items that can be listed on the
 central market in BDO--including value packs--have a price ceiling as
 dictated by the developers of the game. When that price ceiling is reached
@@ -330,7 +334,8 @@ max-priced pre-order placed and sell the item to the said player.
 
 Because of the mechanic described above, an item pre-ordered at its price ceiling
 does not follow a first-come first-serve basis and the central market instead relies
-on randomness to decide which player to sell the item to. This means for items
+on randomness to decide which player to sell the item to. This means that 
+for items
 with drastically higher demand than supply (such as a value pack), players
 are never guaranteed to obtain the item, regardless of how long they have
 placed the pre-order for the said item already. This often leads to cases
@@ -338,7 +343,7 @@ where a player could place a pre-order for an item for an extensive period of
 time (months or years) yet never successfully purchases the item from the
 central market.
 
-Figure \@ref(fig:graph1) showcases this issue: For respondents who claimed
+Figure \@ref(fig:graph2) showcases this issue: For respondents who claimed
 that having a VP active is crucial to their enjoyment of the game, only a few
 reported having consistent success purchasing VPs from the central market.
 Because of this, respondents could be pressured into relying more 
@@ -380,7 +385,6 @@ cleaned_data[-c(6,24,60,112),] |>
 ### Gender of players and Characters
 
 Gender-based appeal is a deep-rooted design pattern in most Korean MMOs.
-(`FIND SOME SOURCE FOR THIS SHIT`)
 Most cosmetic options are designed to appeal to the general playerbase and often
 forfeits any semblance of practicality. This issue is very apparent in female
 armor designs in Korean MMOs, and Black Desert Online is generally not an
@@ -451,7 +455,7 @@ need to continue using subscription-esque items that grant them boosts, or
 due to the creation of more content in the game that requires real world
 currencies to purchase (such as cosmetic items). Given the context of 
 gender-based appeal in Korean MMOs such as BDO, there could also be a connection
-between number of female characters and a player's spending in the pearl shop.
+between the number of female characters and a player's spending in the pearl shop.
 The model therefore seeks to explore whether there 
 really is a statistically significant connection between the total amount
 of money spent in-game and the factors mentioned above. 
@@ -464,7 +468,7 @@ H_0: \beta_1 = \beta_2 = \beta_3 = \beta_4 = 0
 Equation \@ref(eq:linm) represents the model used in this paper, where
 $Y$, the dependent variable, is a player's total spending in pearl shop,
 $\beta_0$ is the intercept, $X_1$ is the covariate of total playtime,
-$X_2$ is the covariate of number of female characters the player has.
+$X_2$ is the covariate of the number of female characters the player has.
 $X_3$ is the covariate of the player's rated importance of VP.
 $X_4$ is the covariate of the player's rated importance of BK and OM.
 $\beta_1 \beta_2, \beta_3, \beta_4$ are the coefficients of the variables.
@@ -512,7 +516,7 @@ noticeable patterns, which indicated a linear relationship between the dependent
 and independent variable.
 
 The Normal Q-Q plot (top-right) shows most points falling on the dashed line,
-though there are also a considerable number of points that fall off the dashed line
+though there is also a considerable number of points that fall off the dashed line
 on the right tail end, suggesting that the residuals may not be entirely normally
 distributed.
 
@@ -615,19 +619,19 @@ diff.avg.cos.prop <-
 
 As shown in Table \@ref(tab:table1), some of the respondents had obtained the
 free package for the game, which were frequently given out through various
-methods by the developer and publisher of BDO, as described in Section
+methods by Pearl Abyss, as described in Section
 \@ref(preliminary-analysis). Out of the 67 respondents
 who obtained the free package of the game, 23 of them remained completely
 free-to-play and did not spend any real world currency to purchase in-game
 items nor other game packages.
 The other 44 respondents--almost double those who remained completely
-free-to-play--either purchased in-game items on the pearl shop or other game
+free-to-play--purchased in-game items on the pearl shop and/or other game
 packages.
 
 This is further elaborated upon in Table \@ref(tab:table3), which summarises
 the dataset based on whether the respondent's spending status is considered
 `completely free` if they obtained the free package for the game and did not
-spent money on other game packages nor in the pearl shop, and `partially free`
+spent money on other game packages nor in the pearl shop, or `partially free`
 if they obtained the free package for the game but spent money on other
 game packges and/or in the pearl shop.
 We can see from Table \@ref(tab:table3) that despite having a lower average
@@ -638,8 +642,8 @@ the amount of money spent on game package purchases accounts for only 6% of
 their total spending on BDO. We observe a similar statistic for players who
 did not obtain a free package for the game, whose spending on game packages
 accounts for only 5% of their total spending on BDO.
-In contrast, microtransactions in BDO accounts for roughly 95% of the total
-revenue, as show in table \@ref(tab:table4), a staggeringly high difference.
+In contrast, microtransactions in BDO account for roughly 95% of the total
+revenue, as shown in table \@ref(tab:table4), a staggeringly high percentage.
 
 ```{r table3, echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
 # create column to mark completely free-to-play respondents
@@ -684,18 +688,18 @@ summary_tbl2 |>
 
 ## Subscription Items
 
-As discussed in \@ref(preliminary-analysis), Figure \@ref(fig:graph9) suggests
+As discussed in Section \@ref(preliminary-analysis), Figure \@ref(fig:graph9) suggests
 a difference in importance as regarded by the respondents. This is supported
 by the statistics shown in Figure \@ref(fig:graph8), which show a stronger
 positive linear correlation between rated importance of VP and spending on
 VP when compared to the correlation between rated importance of BK and OM and
 spending on BK and OM. On average, respondents spend $148.0288 USD on
-purchasing VP from the pearl shop, and spend $49.1202 USD on purchasing
-BK and OM from the pearl shop.
+purchasing VPs from the pearl shop, and spend $49.1202 USD on purchasing
+BKs and OMs from the pearl shop.
 
 Table \@ref(tab:table3) shows that on average, VP accounts for 11% of
 a respondent's total spending on BDO (15% for partially free respondents).
-BK and OM accounts for 4% of a respondent's total spending on BDO (5% for
+BK and OM account for 4% of a respondent's total spending on BDO (5% for
 partially free respondents).
 
 ```{r graph8, fig.cap="Rated Importance of Subscription Items Versus Spending on the Said Items",  echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4}
@@ -741,7 +745,7 @@ From a pure-revenue standpoint, there is a debate to be made about whether
 or not a video game publisher
 should charge an upfront cost on consumers for access to their game.
 On one hand, giving concrete price tags to a game before its launch would grant
-the publisher the strategy to let consumers pre-order the game, injecting a
+the publisher the ability to let consumers pre-order the game, injecting a
 massive amount of funding into the company that could be used for future
 developments and investments on other projects well before they even need to
 finish and release the game.
@@ -793,7 +797,7 @@ players regard VP as the more important subscription item (as shown in Figure
 \@ref(fig:graph9)), publishers of the game may simply think otherwise.
 If possible, further extensions on this study should inquire the players about
 their reasons for rating certain subscription items less important, be it the
-price of its bonuses.
+price or its bonuses.
 
 While the statistics seem to suggest that the introduction of
 multiple subscription items for a single game is not an optimal strategy, this
@@ -821,7 +825,7 @@ Whales are often make up a major portion of a video game's revenue:
 For example, according to Activision Blizzard's [@citeacti] 2021 fourth quarter
 revenue release,
 the company made a net revenue of \$8.086 billion USD, \$5.736 billion USD of
-which is from in-game transactions and subscriptions. A surprising high 70.94%
+which is from in-game transactions and subscriptions. A surprisingly high 70.94%
 of total revenue for the company is from sources other than upfront costs.
 
 ```{r table4, echo=FALSE, warning=FALSE, message=FALSE}
@@ -847,14 +851,14 @@ from the dataset, then the average
 revenue generated from the pearl shop accounts for roughly 95% 
 This clearly demonstrates the importance of whales to a video game company's
 profit, and why catering to these whales could often result in more profit
-than focusing on satisfying to the average consumer.
+than focusing on satisfying the average consumer.
 
 Whales are rare but their impact have not gone unnoticed. In fact, catering to 
 whales is not a new
 strategy for publishers by any means, as demonstrated by Jernström [@citepocket] 
 , who is well versed in this type of monetisation and
 has created a thorough guide for other publishers to follow suit. It is apparent
-that publishers are already catching on to these whales and the best strategy
+that publishers are already catching on to these whales and the best strategies
 to appeal to them. This should state the significance of whales as the highest
 potential source of income for a video game.
 
